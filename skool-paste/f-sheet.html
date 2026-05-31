@@ -23,12 +23,7 @@
 <blockquote><b>What this shows.</b> The recipe is the engine. The input photo + wardrobe slot are the only things that change between these three sheets — everything else (camera, lighting, layout, anti-keywords) is byte-for-byte identical. Build the sheet once for any subject, and the same skill repeats for the next client.</blockquote>
 <p>For <b>objects</b> (products, packaging, hardware) the same skill applies but with different angle names (front / 3/4 hero / profile / top-down / detail macro instead of head-and-shoulders). That's covered in the next lesson: <b>F-PSheet — Build a Product Sheet from One Photo</b>.</p>
 <h3>The 3-tier sheet</h3>
-<table>
-<tr><th>Tier</th><th>What it locks</th><th>Build effort</th></tr>
-<tr><td><b>5-view sheet</b></td><td>Face + body + proportions across angles</td><td>1 generation</td></tr>
-<tr><td><b>4-expression sheet</b></td><td>Neutral + smile + serious + talking</td><td>1 generation, optional</td></tr>
-<tr><td><b>4-wardrobe sheet</b></td><td>Multiple outfits for the same person</td><td>1 per wardrobe family</td></tr>
-</table>
+<div><p><b><b>5-view sheet</b></b></p><ul><li><b>What it locks: </b>Face + body + proportions across angles</li><li><b>Build effort: </b>1 generation</li></ul><p><b><b>4-expression sheet</b></b></p><ul><li><b>What it locks: </b>Neutral + smile + serious + talking</li><li><b>Build effort: </b>1 generation, optional</li></ul><p><b><b>4-wardrobe sheet</b></b></p><ul><li><b>What it locks: </b>Multiple outfits for the same person</li><li><b>Build effort: </b>1 per wardrobe family</li></ul></div>
 <p>The 5-view is non-negotiable. The other two are added when the brief demands them.</p>
 <h3>Recipe F.SHEET.01 — 5-view from one photo</h3>
 <p>JSON-structured for Nano Banana Pro. Attach the client's one input photo as the reference. Returns a single composite image with 5 views.</p>
@@ -72,23 +67,10 @@
 <li><b>Save it</b> named after the identity (<code>anna-sheet.jpg</code>). Reuse it on every downstream shoot.</li>
 </ol>
 <h3>How the sheet powers everything downstream</h3>
-<table>
-<tr><th>Where the sheet feeds in</th><th>What you build</th></tr>
-<tr><td>Frameworks → Model Shoots → Editorial Portrait</td><td>A 6-shot brand portrait set</td></tr>
-<tr><td>Frameworks → Model Shoots → UGC</td><td>A 5-shot creator content set</td></tr>
-<tr><td>Frameworks → Model Shoots → Fashion Editorial</td><td>A 5-look magazine spread</td></tr>
-<tr><td>Frameworks → Creative Ads → Founder Carousel</td><td>A 5-card IG carousel ad</td></tr>
-<tr><td>F4 → Image to Video</td><td>Animated identity-locked clips</td></tr>
-</table>
+<div><p><b>Frameworks → Model Shoots → Editorial Portrait</b></p><ul><li><b>What you build: </b>A 6-shot brand portrait set</li></ul><p><b>Frameworks → Model Shoots → UGC</b></p><ul><li><b>What you build: </b>A 5-shot creator content set</li></ul><p><b>Frameworks → Model Shoots → Fashion Editorial</b></p><ul><li><b>What you build: </b>A 5-look magazine spread</li></ul><p><b>Frameworks → Creative Ads → Founder Carousel</b></p><ul><li><b>What you build: </b>A 5-card IG carousel ad</li></ul><p><b>F4 → Image to Video</b></p><ul><li><b>What you build: </b>Animated identity-locked clips</li></ul></div>
 <p>One sheet. Infinite downstream shoots. That's the leverage.</p>
 <h3>When this fails (troubleshooting)</h3>
-<table>
-<tr><th>Problem</th><th>Likely cause</th><th>Fix</th></tr>
-<tr><td>Different person in some views</td><td>Input photo too small</td><td>Use at least 512×512 in-focus crop</td></tr>
-<tr><td>Wardrobe drifts between views</td><td>Slot too vague</td><td>Be specific — "cream chunky knit with ribbed cuffs," not "knit top"</td></tr>
-<tr><td>One view off-scale</td><td>Composite layout failed</td><td>Fall back to 5 individual generations and tile them</td></tr>
-<tr><td>Sheet looks averaged / generic</td><td>Multi-reference input</td><td>Use ONE clean reference, NOT a collage</td></tr>
-</table>
+<div><p><b>Different person in some views</b></p><ul><li><b>Likely cause: </b>Input photo too small</li><li><b>Fix: </b>Use at least 512×512 in-focus crop</li></ul><p><b>Wardrobe drifts between views</b></p><ul><li><b>Likely cause: </b>Slot too vague</li><li><b>Fix: </b>Be specific — "cream chunky knit with ribbed cuffs," not "knit top"</li></ul><p><b>One view off-scale</b></p><ul><li><b>Likely cause: </b>Composite layout failed</li><li><b>Fix: </b>Fall back to 5 individual generations and tile them</li></ul><p><b>Sheet looks averaged / generic</b></p><ul><li><b>Likely cause: </b>Multi-reference input</li><li><b>Fix: </b>Use ONE clean reference, NOT a collage</li></ul></div>
 <h3>Up next</h3>
 <p><b>F-PSheet — Build a Product Sheet from One Photo.</b> The same skill for objects: one product photo → 5-angle reference grid that locks the SKU across every campaign shot.</p>
 </body></html>

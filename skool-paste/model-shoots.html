@@ -7,43 +7,22 @@
 <p>That's the bucket's signature constraint. Get identity wrong and the deliverable falls apart — the magazine can tell, the client can tell, the audience can tell. Everything else is a slot you can swap.</p>
 <h2>The Model-Shoot lock / variable map</h2>
 <p>Same universal pattern from the <a href="#">meta-page</a> — but here are the columns for THIS bucket:</p>
-<table>
-<tr><th>Always LOCKED for a model shoot</th><th>Always VARIABLE per shot</th></tr>
-<tr>
-<td>
-<b>Identity</b> — face, body, hair (via character sheet)<br/>
+<div><p><b><b>Identity</b> — face, body, hair (via character sheet)<br/>
 <b>Color grade</b> — film stock or LUT-less spec<br/>
 <b>Lens family</b> — 35/50/85/100, kept consistent<br/>
-<b>Anti-keywords</b> — no AI tells, no anime eyes, no Pinterest filter
-</td>
-<td>
-<b>Setting</b> — studio / cafe / street / home / outdoor<br/>
+<b>Anti-keywords</b> — no AI tells, no anime eyes, no Pinterest filter</b></p><ul><li><b>Always VARIABLE per shot: </b><b>Setting</b> — studio / cafe / street / home / outdoor<br/>
 <b>Lighting direction + quality</b> — soft window / hard sun / studio key<br/>
 <b>Pose &amp; composition</b> — three-quarter / full body / detail<br/>
-<b>Wardrobe</b> (sometimes locked, often varied per look)
-</td>
-</tr>
-</table>
+<b>Wardrobe</b> (sometimes locked, often varied per look)</li></ul></div>
 <p>If you don't lock the identity, the set falls apart. If you don't vary the setting and light, the set looks like duplicates of one shot. Both rules at once = a real shoot.</p>
 <h2>Decision framework — picking which entry below</h2>
 <p>Three questions tell you which prompt-bank entry to grab.</p>
 <p><b>1. Where on the polish spectrum?</b></p>
 <img alt="The polish spectrum" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/meta/polish-spectrum.jpg"/>
 <p><b>2. What's the deliverable?</b></p>
-<table>
-<tr><th>If the brief says…</th><th>You want the entry…</th></tr>
-<tr><td>"Founder portrait series for our About page"</td><td><b>Editorial Portrait</b></td></tr>
-<tr><td>"Creator UGC for paid social"</td><td><b>Lifestyle / UGC</b></td></tr>
-<tr><td>"Lookbook for our DTC clothing drop"</td><td><b>Fashion Lookbook</b></td></tr>
-<tr><td>"Beauty campaign / cosmetic packaging"</td><td>Beauty (coming)</td></tr>
-<tr><td>"Sports brand ad / athlete portfolio"</td><td>Athletic (coming)</td></tr>
-</table>
+<div><p><b>"Founder portrait series for our About page"</b></p><ul><li><b>You want the entry…: </b><b>Editorial Portrait</b></li></ul><p><b>"Creator UGC for paid social"</b></p><ul><li><b>You want the entry…: </b><b>Lifestyle / UGC</b></li></ul><p><b>"Lookbook for our DTC clothing drop"</b></p><ul><li><b>You want the entry…: </b><b>Fashion Lookbook</b></li></ul><p><b>"Beauty campaign / cosmetic packaging"</b></p><ul><li><b>You want the entry…: </b>Beauty (coming)</li></ul><p><b>"Sports brand ad / athlete portfolio"</b></p><ul><li><b>You want the entry…: </b>Athletic (coming)</li></ul></div>
 <p><b>3. Is the model an existing person or a generated one?</b></p>
-<table>
-<tr><th>If…</th><th>Then…</th></tr>
-<tr><td>Client has a real person to use</td><td>Train a Soul ID from their photos OR build a character sheet from one good shot (covered in F3).</td></tr>
-<tr><td>You're creating a synthetic model</td><td>Generate a 5-view character sheet first (covered in F3). Then use it as the reference image on every shot below.</td></tr>
-</table>
+<div><p><b>Client has a real person to use</b></p><ul><li><b>Then…: </b>Train a Soul ID from their photos OR build a character sheet from one good shot (covered in F3).</li></ul><p><b>You're creating a synthetic model</b></p><ul><li><b>Then…: </b>Generate a 5-view character sheet first (covered in F3). Then use it as the reference image on every shot below.</li></ul></div>
 <blockquote><b>Identity lock is non-negotiable.</b> Every entry below assumes you already have a character sheet (or trained Soul ID) for the person. If you don't, go to F3 — Identity Locking before you start a model shoot. Skipping that step is the single most common reason a generated shoot looks like a stranger family album.</blockquote>
 <h2>The prompt bank</h2>
 <p>Three paste-ready model-shoot entries below — Editorial Portrait, Lifestyle / UGC, Fashion Lookbook. Each one is one full shoot in a box: theme, locked setup, shot table, results. Pick the one that matches your brief, swap the character reference for yours, swap any slot you need to localize, hit generate row by row.</p>
@@ -75,17 +54,7 @@
 }</code></pre>
 <h3>Shot table — the variable half (8 rows, 6 scenes)</h3>
 <p>Notice rows 2 / 2b / 2c: same cafe corner, same golden hour, same outfit — only the <b>composition</b> column changes. That is the "same scene, multiple angles" move pros use. The shoot reads tighter when the locked half is allowed to genuinely hold.</p>
-<table>
-<tr><th>#</th><th>Setting</th><th>Lighting</th><th>Pose / composition</th><th>Wardrobe</th></tr>
-<tr><td>1</td><td>Clean studio, bone seamless backdrop</td><td>Soft natural daylight, key from camera-left</td><td>3/4 portrait, eyes on camera, small natural smile</td><td>Plain cream t-shirt</td></tr>
-<tr><td>2</td><td>Corner table by a cafe window</td><td>Warm golden-hour window light from camera-left</td><td>Three-quarter — looking down at a laptop</td><td>Cream knit sweater</td></tr>
-<tr><td>2b</td><td><i>Same cafe corner</i></td><td><i>Same golden hour</i></td><td><b>Wide establishing</b> — pulled back, empty chair visible</td><td><i>Same sweater</i></td></tr>
-<tr><td>2c</td><td><i>Same cafe corner</i></td><td><i>Same golden hour</i></td><td><b>Profile, window backlit</b> — clean silhouette, rim light on hair</td><td><i>Same sweater</i></td></tr>
-<tr><td>3</td><td>Home office, wood desk + wall of books</td><td>Diffused window light from camera-right, soft</td><td>Holding an open notebook, head toward window</td><td>Relaxed knit cardigan over t-shirt</td></tr>
-<tr><td>4</td><td>Quiet city street, weathered brick wall</td><td>Overcast diffused daylight, no harsh shadows</td><td>Mid-stride, candid, looking ahead</td><td>Camel coat over cream knit</td></tr>
-<tr><td>5</td><td>Wooden table, blurred warm cafe behind</td><td>Soft window key from camera-left</td><td>Hands holding a coffee cup — no face in frame</td><td>Cream sweater cuff visible</td></tr>
-<tr><td>6</td><td>Architectural loft, large window + exposed brick</td><td>Dominant soft window natural light</td><td>Sitting on a windowsill, small in frame, full body</td><td>Cream t-shirt</td></tr>
-</table>
+<div><p><b>Shot 1</b></p><ul><li><b>Setting: </b>Clean studio, bone seamless backdrop</li><li><b>Lighting: </b>Soft natural daylight, key from camera-left</li><li><b>Pose / composition: </b>3/4 portrait, eyes on camera, small natural smile</li><li><b>Wardrobe: </b>Plain cream t-shirt</li></ul><p><b>Shot 2</b></p><ul><li><b>Setting: </b>Corner table by a cafe window</li><li><b>Lighting: </b>Warm golden-hour window light from camera-left</li><li><b>Pose / composition: </b>Three-quarter — looking down at a laptop</li><li><b>Wardrobe: </b>Cream knit sweater</li></ul><p><b>Shot 2b</b></p><ul><li><b>Setting: </b><i>Same cafe corner</i></li><li><b>Lighting: </b><i>Same golden hour</i></li><li><b>Pose / composition: </b><b>Wide establishing</b> — pulled back, empty chair visible</li><li><b>Wardrobe: </b><i>Same sweater</i></li></ul><p><b>Shot 2c</b></p><ul><li><b>Setting: </b><i>Same cafe corner</i></li><li><b>Lighting: </b><i>Same golden hour</i></li><li><b>Pose / composition: </b><b>Profile, window backlit</b> — clean silhouette, rim light on hair</li><li><b>Wardrobe: </b><i>Same sweater</i></li></ul><p><b>Shot 3</b></p><ul><li><b>Setting: </b>Home office, wood desk + wall of books</li><li><b>Lighting: </b>Diffused window light from camera-right, soft</li><li><b>Pose / composition: </b>Holding an open notebook, head toward window</li><li><b>Wardrobe: </b>Relaxed knit cardigan over t-shirt</li></ul><p><b>Shot 4</b></p><ul><li><b>Setting: </b>Quiet city street, weathered brick wall</li><li><b>Lighting: </b>Overcast diffused daylight, no harsh shadows</li><li><b>Pose / composition: </b>Mid-stride, candid, looking ahead</li><li><b>Wardrobe: </b>Camel coat over cream knit</li></ul><p><b>Shot 5</b></p><ul><li><b>Setting: </b>Wooden table, blurred warm cafe behind</li><li><b>Lighting: </b>Soft window key from camera-left</li><li><b>Pose / composition: </b>Hands holding a coffee cup — no face in frame</li><li><b>Wardrobe: </b>Cream sweater cuff visible</li></ul><p><b>Shot 6</b></p><ul><li><b>Setting: </b>Architectural loft, large window + exposed brick</li><li><b>Lighting: </b>Dominant soft window natural light</li><li><b>Pose / composition: </b>Sitting on a windowsill, small in frame, full body</li><li><b>Wardrobe: </b>Cream t-shirt</li></ul></div>
 <h3>Results — the actual generated set</h3>
 <p>Same character sheet on every shot. Same setup recipe. Eight rows = eight images that read like one shoot. The three green-highlighted cafe rows above land as three legitimate frames of the same moment — the kind of triplet a working photographer would ship together.</p>
 
@@ -134,14 +103,7 @@
   "character_reference": "&lt;character sheet attached&gt;"
 }</code></pre>
 <h3>Shot table — the variable half (5 shots)</h3>
-<table>
-<tr><th>#</th><th>Setting</th><th>Lighting</th><th>Action / composition</th><th>Wardrobe</th></tr>
-<tr><td>1</td><td>Morning bedroom, rumpled linen bedding, wood headboard</td><td>Harsh single window light from camera-left, clipped highlights</td><td>Candid unwrapping a cardboard package, slight smile, looking down</td><td>Plain navy t-shirt</td></tr>
-<tr><td>2</td><td>Home bathroom, white tile, fingerprint-smudged mirror</td><td>Soft side window light, mirror glare visible</td><td>Mirror selfie holding bottle at face height, iPhone visible</td><td>Plain navy t-shirt</td></tr>
-<tr><td>3</td><td>Implied bedroom corner</td><td>Soft afternoon window light from camera-left, slight focus softness</td><td>Hands close-up, bottle against a chunky oatmeal knit — no face</td><td>Oatmeal knit sweater cuff visible</td></tr>
-<tr><td>4</td><td>Lived-in modern kitchen, real domestic clutter</td><td>Harsh direct morning sun from camera-right, deep shadow</td><td>At counter, mug of coffee, bottle on counter, looking out the window</td><td>Wrinkled gray t-shirt</td></tr>
-<tr><td>5</td><td>Apartment hallway / front door entryway, sneakers near the door</td><td>Mixed harsh outdoor light from open door + dim indoor ambient</td><td>Behind-the-shoulder mid-stride, gym bag with bottle in side pocket</td><td>Gray zip hoodie</td></tr>
-</table>
+<div><p><b>Shot 1</b></p><ul><li><b>Setting: </b>Morning bedroom, rumpled linen bedding, wood headboard</li><li><b>Lighting: </b>Harsh single window light from camera-left, clipped highlights</li><li><b>Action / composition: </b>Candid unwrapping a cardboard package, slight smile, looking down</li><li><b>Wardrobe: </b>Plain navy t-shirt</li></ul><p><b>Shot 2</b></p><ul><li><b>Setting: </b>Home bathroom, white tile, fingerprint-smudged mirror</li><li><b>Lighting: </b>Soft side window light, mirror glare visible</li><li><b>Action / composition: </b>Mirror selfie holding bottle at face height, iPhone visible</li><li><b>Wardrobe: </b>Plain navy t-shirt</li></ul><p><b>Shot 3</b></p><ul><li><b>Setting: </b>Implied bedroom corner</li><li><b>Lighting: </b>Soft afternoon window light from camera-left, slight focus softness</li><li><b>Action / composition: </b>Hands close-up, bottle against a chunky oatmeal knit — no face</li><li><b>Wardrobe: </b>Oatmeal knit sweater cuff visible</li></ul><p><b>Shot 4</b></p><ul><li><b>Setting: </b>Lived-in modern kitchen, real domestic clutter</li><li><b>Lighting: </b>Harsh direct morning sun from camera-right, deep shadow</li><li><b>Action / composition: </b>At counter, mug of coffee, bottle on counter, looking out the window</li><li><b>Wardrobe: </b>Wrinkled gray t-shirt</li></ul><p><b>Shot 5</b></p><ul><li><b>Setting: </b>Apartment hallway / front door entryway, sneakers near the door</li><li><b>Lighting: </b>Mixed harsh outdoor light from open door + dim indoor ambient</li><li><b>Action / composition: </b>Behind-the-shoulder mid-stride, gym bag with bottle in side pocket</li><li><b>Wardrobe: </b>Gray zip hoodie</li></ul></div>
 <h3>Results</h3>
 
 <img alt="UGC unboxing" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/ugc/01-unbox.jpg"/>
@@ -184,14 +146,7 @@
   "character_reference": "&lt;character sheet attached&gt;"
 }</code></pre>
 <h3>Shot table — the variable half (5 shots)</h3>
-<table>
-<tr><th>#</th><th>Setting</th><th>Outfit (the lookbook's variable)</th><th>Pose / composition</th></tr>
-<tr><td>1</td><td>Bone-white cyc</td><td>Oversized cream chunky knit + wide cream trousers</td><td>Weight dramatically on one hip, shoulder dropped, head tilted away, gaze down</td></tr>
-<tr><td>2</td><td>Dark-gray gradient cyc</td><td>Black single-breasted suit, no shirt under, deep V</td><td>Hand at back of neck, elbow up, head tilted down, eyes up at camera</td></tr>
-<tr><td>3</td><td>Bone-white cyc</td><td>Silk slip dress under vintage leather jacket falling off one shoulder</td><td>Leaning back, weight on heel, wrist twisted, bored-cool expression</td></tr>
-<tr><td>4</td><td>Warm-gray painted backdrop</td><td>Indigo denim + crisp white tee tucked in</td><td>Caught mid-turn, looking back over shoulder, hard shadow on backdrop</td></tr>
-<tr><td>5</td><td>Pure black seamless</td><td>Thin black turtleneck (close-up)</td><td>Head tilted sharply, intense gaze, hand grazing under jaw, cover crop</td></tr>
-</table>
+<div><p><b>Shot 1</b></p><ul><li><b>Setting: </b>Bone-white cyc</li><li><b>Outfit (the lookbook's variable): </b>Oversized cream chunky knit + wide cream trousers</li><li><b>Pose / composition: </b>Weight dramatically on one hip, shoulder dropped, head tilted away, gaze down</li></ul><p><b>Shot 2</b></p><ul><li><b>Setting: </b>Dark-gray gradient cyc</li><li><b>Outfit (the lookbook's variable): </b>Black single-breasted suit, no shirt under, deep V</li><li><b>Pose / composition: </b>Hand at back of neck, elbow up, head tilted down, eyes up at camera</li></ul><p><b>Shot 3</b></p><ul><li><b>Setting: </b>Bone-white cyc</li><li><b>Outfit (the lookbook's variable): </b>Silk slip dress under vintage leather jacket falling off one shoulder</li><li><b>Pose / composition: </b>Leaning back, weight on heel, wrist twisted, bored-cool expression</li></ul><p><b>Shot 4</b></p><ul><li><b>Setting: </b>Warm-gray painted backdrop</li><li><b>Outfit (the lookbook's variable): </b>Indigo denim + crisp white tee tucked in</li><li><b>Pose / composition: </b>Caught mid-turn, looking back over shoulder, hard shadow on backdrop</li></ul><p><b>Shot 5</b></p><ul><li><b>Setting: </b>Pure black seamless</li><li><b>Outfit (the lookbook's variable): </b>Thin black turtleneck (close-up)</li><li><b>Pose / composition: </b>Head tilted sharply, intense gaze, hand grazing under jaw, cover crop</li></ul></div>
 <h3>Results</h3>
 
 <img alt="Look 01 — angular knit" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/fashion/01-knit.jpg"/>

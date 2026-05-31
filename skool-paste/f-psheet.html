@@ -10,14 +10,7 @@
 <img alt="Product sheet — five angles of the same watch" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/sheets/product-sheet-demo.jpg"/>
 <p>Five angles: three-quarter hero / dead-front / profile / top-down / detail macro. Same watch, same finish, same scale, same lighting.</p>
 <h3>The 5-angle product sheet</h3>
-<table>
-<tr><th>#</th><th>Angle</th><th>Why it's locked</th></tr>
-<tr><td>1</td><td><b>Three-quarter HERO</b></td><td>The marquee shot. The brand-recognition cue.</td></tr>
-<tr><td>2</td><td><b>Dead front</b></td><td>Flat, centered, dial / label / logo readable.</td></tr>
-<tr><td>3</td><td><b>Profile</b></td><td>Depth, edge geometry, thickness.</td></tr>
-<tr><td>4</td><td><b>Top-down</b></td><td>Flat-lay master.</td></tr>
-<tr><td>5</td><td><b>Detail macro</b></td><td>Tight crop on the most premium detail.</td></tr>
-</table>
+<div><p><b>Shot 1</b></p><ul><li><b>Angle: </b><b>Three-quarter HERO</b></li><li><b>Why it's locked: </b>The marquee shot. The brand-recognition cue.</li></ul><p><b>Shot 2</b></p><ul><li><b>Angle: </b><b>Dead front</b></li><li><b>Why it's locked: </b>Flat, centered, dial / label / logo readable.</li></ul><p><b>Shot 3</b></p><ul><li><b>Angle: </b><b>Profile</b></li><li><b>Why it's locked: </b>Depth, edge geometry, thickness.</li></ul><p><b>Shot 4</b></p><ul><li><b>Angle: </b><b>Top-down</b></li><li><b>Why it's locked: </b>Flat-lay master.</li></ul><p><b>Shot 5</b></p><ul><li><b>Angle: </b><b>Detail macro</b></li><li><b>Why it's locked: </b>Tight crop on the most premium detail.</li></ul></div>
 <h3>Recipe F.PSHEET.01 — 5-angle product sheet</h3>
 <p>JSON-structured for Nano Banana Pro. Attach the client's one product photo as the reference.</p>
 <pre><code>{
@@ -58,22 +51,9 @@
 <li><b>Save it</b> named after the SKU. Reuse on every downstream product shoot.</li>
 </ol>
 <h3>How the product sheet powers everything downstream</h3>
-<table>
-<tr><th>Where it feeds in</th><th>What you build</th></tr>
-<tr><td>Frameworks → Product Shoots → Hero / Marquee</td><td>Premium launch image</td></tr>
-<tr><td>Frameworks → Product Shoots → Lifestyle</td><td>In-context campaign shot</td></tr>
-<tr><td>Frameworks → Product Shoots → Tabletop Still Life</td><td>Magazine still-life</td></tr>
-<tr><td>Frameworks → Creative Ads → Product Launch Ad</td><td>4:5 IG hero with copy overlay</td></tr>
-<tr><td>Model Shoots → UGC + product</td><td>Combine character + product sheet for creator-content ads</td></tr>
-</table>
+<div><p><b>Frameworks → Product Shoots → Hero / Marquee</b></p><ul><li><b>What you build: </b>Premium launch image</li></ul><p><b>Frameworks → Product Shoots → Lifestyle</b></p><ul><li><b>What you build: </b>In-context campaign shot</li></ul><p><b>Frameworks → Product Shoots → Tabletop Still Life</b></p><ul><li><b>What you build: </b>Magazine still-life</li></ul><p><b>Frameworks → Creative Ads → Product Launch Ad</b></p><ul><li><b>What you build: </b>4:5 IG hero with copy overlay</li></ul><p><b>Model Shoots → UGC + product</b></p><ul><li><b>What you build: </b>Combine character + product sheet for creator-content ads</li></ul></div>
 <h3>When this fails (troubleshooting)</h3>
-<table>
-<tr><th>Problem</th><th>Likely cause</th><th>Fix</th></tr>
-<tr><td>Different finish on each angle</td><td>Input photo low-quality</td><td>Use sharper input or run F5 edit-one-element per cell</td></tr>
-<tr><td>Logo / brand text drifts</td><td>Generators invent text</td><td>Add <code>preserve_logo_exactly_as_reference: true</code></td></tr>
-<tr><td>Scale wildly different between cells</td><td>Layout spec missed</td><td>Re-state "the product occupies the same proportion of each cell"</td></tr>
-<tr><td>Looks rendered, not photographed</td><td>Default product-CGI bias</td><td>Add <code>"photographed product, not 3D render"</code> + <code>"no CGI look"</code></td></tr>
-</table>
+<div><p><b>Different finish on each angle</b></p><ul><li><b>Likely cause: </b>Input photo low-quality</li><li><b>Fix: </b>Use sharper input or run F5 edit-one-element per cell</li></ul><p><b>Logo / brand text drifts</b></p><ul><li><b>Likely cause: </b>Generators invent text</li><li><b>Fix: </b>Add <code>preserve_logo_exactly_as_reference: true</code></li></ul><p><b>Scale wildly different between cells</b></p><ul><li><b>Likely cause: </b>Layout spec missed</li><li><b>Fix: </b>Re-state "the product occupies the same proportion of each cell"</li></ul><p><b>Looks rendered, not photographed</b></p><ul><li><b>Likely cause: </b>Default product-CGI bias</li><li><b>Fix: </b>Add <code>"photographed product, not 3D render"</code> + <code>"no CGI look"</code></li></ul></div>
 <h3>Up next</h3>
 <p><b>Frameworks → Product Shoots</b> — uses your sheet as the input to hero / lifestyle / tabletop frameworks. Or jump straight to <b>Frameworks → Creative Ads</b> for the finished deliverable.</p>
 </body></html>

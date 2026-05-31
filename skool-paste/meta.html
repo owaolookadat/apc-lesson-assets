@@ -34,15 +34,7 @@ across studio, work, and life moments.</code></pre>
 <p>The <code>&lt;SLOT&gt;</code> markers are the variable half. Everything else holds.</p>
 <h2>Stage 3 — the Shot Table</h2>
 <p>The variable half goes into a flat table. One row per shot. Columns = the slots. This is your shot brief in one glance:</p>
-<table>
-<tr><th>#</th><th>Setting</th><th>Lighting</th><th>Pose / composition</th></tr>
-<tr><td>1</td><td>Clean studio, bone backdrop</td><td>Soft natural daylight, key from left</td><td>Three-quarter portrait, eyes on camera</td></tr>
-<tr><td>2</td><td>Quiet cafe, by a window</td><td>Golden hour through window</td><td>Looking down at a laptop, candid</td></tr>
-<tr><td>3</td><td>Home office, wood desk + books</td><td>Diffused window, soft</td><td>Holding a notebook, head toward window</td></tr>
-<tr><td>4</td><td>City street, weathered brick wall</td><td>Overcast, soft diffused</td><td>Mid-stride, candid, looking ahead</td></tr>
-<tr><td>5</td><td>Wooden table, blurred cafe behind</td><td>Soft window, warm side light</td><td>Hands holding a coffee cup — no face</td></tr>
-<tr><td>6</td><td>Architectural loft, big window</td><td>Dominant natural window</td><td>Wide environmental, subject small in frame</td></tr>
-</table>
+<div><p><b>Shot 1</b></p><ul><li><b>Setting: </b>Clean studio, bone backdrop</li><li><b>Lighting: </b>Soft natural daylight, key from left</li><li><b>Pose / composition: </b>Three-quarter portrait, eyes on camera</li></ul><p><b>Shot 2</b></p><ul><li><b>Setting: </b>Quiet cafe, by a window</li><li><b>Lighting: </b>Golden hour through window</li><li><b>Pose / composition: </b>Looking down at a laptop, candid</li></ul><p><b>Shot 3</b></p><ul><li><b>Setting: </b>Home office, wood desk + books</li><li><b>Lighting: </b>Diffused window, soft</li><li><b>Pose / composition: </b>Holding a notebook, head toward window</li></ul><p><b>Shot 4</b></p><ul><li><b>Setting: </b>City street, weathered brick wall</li><li><b>Lighting: </b>Overcast, soft diffused</li><li><b>Pose / composition: </b>Mid-stride, candid, looking ahead</li></ul><p><b>Shot 5</b></p><ul><li><b>Setting: </b>Wooden table, blurred cafe behind</li><li><b>Lighting: </b>Soft window, warm side light</li><li><b>Pose / composition: </b>Hands holding a coffee cup — no face</li></ul><p><b>Shot 6</b></p><ul><li><b>Setting: </b>Architectural loft, big window</li><li><b>Lighting: </b>Dominant natural window</li><li><b>Pose / composition: </b>Wide environmental, subject small in frame</li></ul></div>
 <h2>Worked example — what Row 1 actually looks like</h2>
 <p>The recipe + the shot table feel abstract until you see one row turned into a real prompt. Here is Row 1 of the table above, with every <code>&lt;SLOT&gt;</code> from the recipe replaced by Row 1's values. This is the string you paste into your generator.</p>
 <pre><code>{
@@ -69,36 +61,19 @@ across studio, work, and life moments.</code></pre>
 <h2>Decision framework — picking your split</h2>
 <p>Before you write the recipe, two decisions tell you what to lock.</p>
 <p><b>Decision A — what's the deliverable for?</b></p>
-<table>
-<tr><th>If the deliverable is…</th><th>You're shooting…</th></tr>
-<tr><td>An ad campaign / brand launch</td><td>Polished commercial — lock lighting + grade hard</td></tr>
-<tr><td>Social organic / creator content</td><td>UGC — lock identity but variable phone-feel</td></tr>
-<tr><td>Website / press / lookbook</td><td>Editorial — lock grade + lens, variable setting</td></tr>
-<tr><td>Catalog / e-commerce</td><td>Studio packshot — lock everything except the SKU</td></tr>
-</table>
+<div><p><b>An ad campaign / brand launch</b></p><ul><li><b>You're shooting…: </b>Polished commercial — lock lighting + grade hard</li></ul><p><b>Social organic / creator content</b></p><ul><li><b>You're shooting…: </b>UGC — lock identity but variable phone-feel</li></ul><p><b>Website / press / lookbook</b></p><ul><li><b>You're shooting…: </b>Editorial — lock grade + lens, variable setting</li></ul><p><b>Catalog / e-commerce</b></p><ul><li><b>You're shooting…: </b>Studio packshot — lock everything except the SKU</li></ul></div>
 <p><b>Decision B — where on the polish spectrum?</b> One axis. Pick a point. That choice drives every locked ingredient.</p>
 <img alt="The polish spectrum — five stops from studio to documentary" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/meta/polish-spectrum.jpg"/>
 <p>The further left you sit, the harder you lock lighting + grade. The further right you sit, the more you lock identity and let the rest feel hand-held.</p>
 <h2>Polished or raw — both are valid choices</h2>
 <p>The spectrum used to map to "good versus bad." That is no longer true. Modern commercial work — beauty, wellness, fashion, hospitality — is actively choosing realism. Visible pores, micro-asymmetry, uneven light, slight imperfection. Brands buy it because audiences read it as <i>real</i>, and real outperforms perfect in feeds and conversion.</p>
 <p>When you write your recipe, decide on purpose which side you're shooting.</p>
-<table>
-<tr><th>If you want polished</th><th>If you want raw</th></tr>
-<tr><td>Lock studio lighting and a clean LUT-style grade</td><td>Lock identity hard, leave light uneven</td></tr>
-<tr><td>Wardrobe styled, hair done, makeup deliberate</td><td>Wardrobe casual, hair natural, no glam</td></tr>
-<tr><td>Anti-keywords: anti-grain, anti-blur, anti-imperfection</td><td>Anti-keywords: NO beauty filter, NO skin smoothing, NO studio polish, NO DSLR look</td></tr>
-<tr><td>Add to prompt: "campaign quality, magazine sharp"</td><td>Add to prompt: "visible skin texture, pores, micro-asymmetry, true-to-life skin tones"</td></tr>
-</table>
+<div><p><b>Lock studio lighting and a clean LUT-style grade</b></p><ul><li><b>If you want raw: </b>Lock identity hard, leave light uneven</li></ul><p><b>Wardrobe styled, hair done, makeup deliberate</b></p><ul><li><b>If you want raw: </b>Wardrobe casual, hair natural, no glam</li></ul><p><b>Anti-keywords: anti-grain, anti-blur, anti-imperfection</b></p><ul><li><b>If you want raw: </b>Anti-keywords: NO beauty filter, NO skin smoothing, NO studio polish, NO DSLR look</li></ul><p><b>Add to prompt: "campaign quality, magazine sharp"</b></p><ul><li><b>If you want raw: </b>Add to prompt: "visible skin texture, pores, micro-asymmetry, true-to-life skin tones"</li></ul></div>
 <blockquote><b>The skin-texture phrase is the single most important addition for "raw."</b> Without it, every model tends to default to polished. With it, the same recipe produces a real human you'd believe the photo of.</blockquote>
 <h2>Same scene, multiple angles — the move pros use</h2>
 <p>A working shoot does not give you one shot per scene. It gives you 2–4 angles of each setup. Wide establishing, profile, close-up of hands, reverse over-the-shoulder. Same coffee, same window, same light — the variation is composition, not setting.</p>
 <p>When you write your shot table, allow yourself rows at the <i>same</i> setting where only the <b>composition</b> column changes. The locked half holds; the variable half barely moves; the set reads as a <i>shoot</i> instead of a slideshow of separate moments.</p>
-<table>
-<tr><th>#</th><th>Setting</th><th>Light</th><th>Composition</th></tr>
-<tr><td>2</td><td>Cafe corner, by window</td><td>Golden hour through window</td><td>Three-quarter looking down at laptop</td></tr>
-<tr><td>2b</td><td>Same cafe corner</td><td>Same golden hour</td><td><b>Wide establishing</b> — pulled back, empty chair visible</td></tr>
-<tr><td>2c</td><td>Same cafe corner</td><td>Same golden hour</td><td><b>Profile, window backlit</b> — silhouette rim-lit by window</td></tr>
-</table>
+<div><p><b>Shot 2</b></p><ul><li><b>Setting: </b>Cafe corner, by window</li><li><b>Light: </b>Golden hour through window</li><li><b>Composition: </b>Three-quarter looking down at laptop</li></ul><p><b>Shot 2b</b></p><ul><li><b>Setting: </b>Same cafe corner</li><li><b>Light: </b>Same golden hour</li><li><b>Composition: </b><b>Wide establishing</b> — pulled back, empty chair visible</li></ul><p><b>Shot 2c</b></p><ul><li><b>Setting: </b>Same cafe corner</li><li><b>Light: </b>Same golden hour</li><li><b>Composition: </b><b>Profile, window backlit</b> — silhouette rim-lit by window</li></ul></div>
 <p>Three shots, one setup, three different reads. See the Model Shoots bucket page for what this looks like in practice.</p>
 <h2>Where to go next</h2>
 <p>The pattern is universal. The slot names are what change per bucket. Go to the bucket that matches your shoot:</p>
