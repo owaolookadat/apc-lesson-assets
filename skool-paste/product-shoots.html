@@ -126,11 +126,246 @@
 <h3>Now ship it</h3>
 <p>This is the format that doubles as both editorial AND e-commerce gift-guide content. One shot can land in a magazine spread and in a paid social ad on the same day. Swap the context items to match seasonal moods (autumn = leather + spices + amber; spring = ceramics + cream + green) and you have a year-long content calendar from one product sheet.</p>
 
+<h2>The commercial-grade entries — campaign drama</h2>
+<p>The three entries above (Hero / Lifestyle / Tabletop) cover the daily-use registers — clean, restrained, brand-appropriate. The seven entries below are <b>ad-campaign register</b> — the dramatic, the impossible, the conceptual. The kind of shots you see in Apple keynotes, Patek Philippe magazine spreads, Nike launch ads, Hermès campaigns. Same product sheet feeds every one of them; only the framing, lighting, and conceptual choice changes.</p>
+<blockquote><b>Why this matters for AI specifically.</b> Stock photography can't do these — they require coordinated production, talent, locations, water rigs, optics. AI generation does them for free if you write the right recipe. This is where the technology lives up to "what's possible." Every entry below was generated from the same single watch reference + a focused commercial prompt.</blockquote>
+<!-- ============================ -->
+<!-- ENTRY 4 — HYPER-DRAMATIC LAUNCH -->
+<!-- ============================ -->
+
+<h3><b>F.P.04</b> — Hyper-Dramatic Launch — keynote hero</h3>
+<p><b>Use when:</b> the brief is a product launch billboard, a keynote-stage moment, a website hero on launch day. Apple-keynote / Tesla-reveal register. The product appears suspended in pure void, single dramatic rim light, surrounded by deep noir negative space. No surface, no context — just product as monument.</p>
+<p><i>Uses the same product sheet as F.P.01.</i></p>
+<h3>Theme</h3>
+<p>Pure launch-poster moment. Cinematic rim light edging the case. The watch floats — there is no world around it. The product is the only thing that exists. Maximum drama, minimum context.</p>
+<h3>Setup recipe — the locked half</h3>
+<pre><code>{
+  "image_type": "premium product launch billboard photograph",
+  "subject": "the product from the reference image — do not redescribe",
+  "composition": "floating perfectly centered in absolute void darkness",
+  "lighting": "single dramatic top-down rim light edging the case profile with pure white highlight, the rest in deep cinematic shadow",
+  "no_surface": true,
+  "no_ground_shadow": true,
+  "negative_space": "~80% deep noir surrounding the product",
+  "camera_lens": "Phase One IQ4, 200mm macro f/16, hyper-sharp throughout",
+  "color_grade": "pure noir, jet-black background, controlled rim-light highlights only",
+  "atmospheric_effect": "subtle volumetric atmosphere visible in the rim light",
+  "preserve_product_exactly_from_reference": true,
+  "no_cgi_look": true,
+  "no_blown_highlights": true,
+  "identity_lock_strength": "high",
+  "product_reference": "&lt;product sheet attached&gt;"
+}</code></pre>
+<h3>Result</h3>
+
+<img alt="Watch keynote hero — floating in pure noir" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/product-shoots/commercial/04-launch.jpg"/>
+
+<p><i>4:5 aspect. The product floats. There is nothing else. This is the launch poster.</i></p>
+<h3>Now ship it</h3>
+<p>Run on launch day. Pair with a one-line product name + spec. Print it 8 feet tall on a brand store window and it still holds. The composition takes copy easily because 80% of the frame is empty.</p>
+
+<!-- ============================ -->
+<!-- ENTRY 5 — MOTION / ACTION -->
+<!-- ============================ -->
+
+<h3><b>F.P.05</b> — Motion / Action — peak-moment hero</h3>
+<p><b>Use when:</b> the brief is a sport / performance / athletic-positioning campaign. The product is mid-use, in someone's life, captured at peak action. Nike-meets-Rolex register. The watch is sharp, the world around it is in motion blur.</p>
+<p><i>Uses the same product sheet as F.P.01.</i></p>
+<h3>Theme</h3>
+<p>Energy + precision. The fast-shutter freeze of the dial against the soft motion blur of everything else. The product isn't sitting still on a surface — it's in the middle of someone's run, swing, jump, swim. Commercial drama lives in the capture.</p>
+<h3>Setup recipe — the locked half</h3>
+<pre><code>{
+  "image_type": "commercial sport product advertisement, peak-action capture",
+  "subject": "the product from the reference image, worn / used by an athletic person mid-gesture",
+  "motion_treatment": "subtle motion blur on surrounding limbs / background; product itself is tack-sharp (fast-shutter freeze)",
+  "setting": "&lt;SLOT — outdoor track / pool / mountain / city run&gt;",
+  "lighting": "&lt;SLOT — dramatic golden hour OR hard noon side light&gt;",
+  "camera_lens": "Sony A9, 100mm f/2.8, 1/1000 shutter freezing the product while the surrounding moves",
+  "color_grade": "warm-natural, athletic, raised blacks, faithful skin tones",
+  "preserve_product_exactly_from_reference": true,
+  "no_static_pose": true,
+  "no_studio_polish": true,
+  "identity_lock_strength": "high",
+  "product_reference": "&lt;product sheet attached&gt;"
+}</code></pre>
+<h3>Result</h3>
+
+<img alt="Watch on wrist mid-stride at golden hour, motion blur in background" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/product-shoots/commercial/05-motion.jpg"/>
+
+<p><i>9:16. Watch on the wrist of an athlete mid-stride at golden hour. The dial is sharp; the track behind is motion-blurred energy. This is the launch-spot vibe.</i></p>
+<h3>Now ship it</h3>
+<p>Pair the launch spot with a one-word headline ("Built." / "Stayed." / "Earned."). Use as the opening shot of a 5-second Reel that ends on the dial close-up.</p>
+
+<!-- ============================ -->
+<!-- ENTRY 6 — COLOR DRAMA -->
+<!-- ============================ -->
+
+<h3><b>F.P.06</b> — Color Drama — single-color brand flood</h3>
+<p><b>Use when:</b> the brand has a signature color (Hermès orange, Tiffany blue, Bottega green, our acid lime). The product cuts through a single saturated color flood as the brand cue. Magazine cover register. The color IS the campaign.</p>
+<p><i>Uses the same product sheet as F.P.01. The variable is the color floor.</i></p>
+<h3>Theme</h3>
+<p>One brand color owns the frame. The product sits in the center as the brand mark. Single hard side light creates a clean editorial shadow. Magazine cover composition — bold, instant, undeniable.</p>
+<h3>Setup recipe — the locked half</h3>
+<pre><code>{
+  "image_type": "editorial product campaign with bold color drama",
+  "subject": "the product from the reference image",
+  "backdrop": "&lt;SLOT — single saturated brand-color seamless flooding 90% of frame (acid lime / Hermès orange / Tiffany blue / etc)&gt;",
+  "lighting": "single hard dramatic side light from camera-right, clean editorial shadow falloff on the backdrop",
+  "color_reflection": "the product picks up subtle backdrop color reflections in its surface",
+  "composition": "product centered foreground, color floods everywhere else, deep shadow falloff on one side",
+  "camera_lens": "Phase One IQ4, 120mm macro f/8, tack sharp",
+  "color_grade": "dominant saturated brand color + cool product tones + crisp editorial shadow",
+  "preserve_product_exactly_from_reference": true,
+  "no_pinterest_filter": true,
+  "no_busy_backdrop": true,
+  "identity_lock_strength": "high",
+  "product_reference": "&lt;product sheet attached&gt;"
+}</code></pre>
+<h3>Result</h3>
+
+<img alt="Watch on acid-lime backdrop with dramatic editorial shadow" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/product-shoots/commercial/06-color.jpg"/>
+
+<p><i>4:5. Acid-lime backdrop (our brand color) floods the frame, watch centered, sharp editorial shadow on the right. Swap the color for any brand's signature — same composition, same power.</i></p>
+<h3>Now ship it</h3>
+<p>This is the magazine cover, the homepage hero, the launch announcement. Swap the lime for the brand's color (or use the brand's three brand-system colors as a triptych — same product, three color-flooded compositions, one campaign). Add the headline in the brand's display font over the negative space.</p>
+
+<!-- ============================ -->
+<!-- ENTRY 7 — ENVIRONMENTAL SCALE -->
+<!-- ============================ -->
+
+<h3><b>F.P.07</b> — Environmental Scale — billboard composition</h3>
+<p><b>Use when:</b> the brief is heritage / legacy / scale positioning. Patek Philippe "Generations" register. The product is massive in foreground, the world is tiny in background. Wide-angle drama. The composition itself signals "this watch is bigger than your life."</p>
+<p><i>Uses the same product sheet as F.P.01.</i></p>
+<h3>Theme</h3>
+<p>The product becomes a monument. Wide-angle drama compresses the product into the foreground at unrealistic scale and shrinks the human world behind it. The watch isn't on a wrist — it's a presence the wearer aspires toward.</p>
+<h3>Setup recipe — the locked half</h3>
+<pre><code>{
+  "image_type": "billboard-scale luxury product campaign",
+  "subject": "the product from the reference image, placed huge in extreme foreground at unrealistic giant scale",
+  "background": "&lt;SLOT — minimalist landscape (Icelandic plain / desert / Tokyo crossing / single Brutalist building)&gt;",
+  "background_human": "a tiny lone figure walking across the background, for scale tension",
+  "composition": "product dominates lower-left or left third of frame, world tiny in distance",
+  "lighting": "ambient overcast OR dramatic single side light, environment soft, product sharp",
+  "camera_lens": "Sony 14mm GM at f/11, deep focus throughout, wide cinematic aspect (16:9 or wider)",
+  "color_grade": "muted environment + warm metallic case picking up the only warm note",
+  "preserve_product_exactly_from_reference": true,
+  "no_normal_product_scale": true,
+  "no_busy_environment": true,
+  "identity_lock_strength": "high",
+  "product_reference": "&lt;product sheet attached&gt;"
+}</code></pre>
+<h3>Result</h3>
+
+<img alt="Watch huge in foreground, tiny figure on Icelandic volcanic landscape" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/product-shoots/commercial/07-scale.jpg"/>
+
+<p><i>16:9. Watch hero at billboard scale, tiny figure walking the black volcanic plain, distant mountains in fog. Heritage-campaign register.</i></p>
+<h3>Now ship it</h3>
+<p>This is the print-magazine double-page spread, the airport billboard, the website opener for a generational campaign. Pair with a heritage tagline ("Worn since 1972." / "Made to outlive trends.") in the upper-right negative space.</p>
+
+<!-- ============================ -->
+<!-- ENTRY 8 — CONCEPTUAL / SURREAL -->
+<!-- ============================ -->
+
+<h3><b>F.P.08</b> — Conceptual / Surreal — visual pun</h3>
+<p><b>Use when:</b> the brief is editorial, art-direction-led, conversation-starting. The product is transformed into something it isn't — a metaphor, a pun, a visual hook. Dali-esque commercial wit. The kind of shot WIRED puts on a cover.</p>
+<p><i>Uses the same product sheet as F.P.01 — only the dial face is reimagined.</i></p>
+<h3>Theme</h3>
+<p>Take ONE element of the product and replace it with a visual metaphor while keeping everything else faithful to the reference. Dial as vinyl record. Dial as compass. Dial as aperture. Dial as a tiny planet. The case + strap stay identical so the brand is recognizable; the dial does the conceptual lift.</p>
+<h3>Setup recipe — the locked half</h3>
+<pre><code>{
+  "image_type": "high-concept editorial product photograph",
+  "subject": "the product from the reference image — case, hands, crown, strap MUST match the reference exactly",
+  "conceptual_swap": "&lt;SLOT — replace only the dial face with a metaphor (vinyl record / compass rose / aperture blades / planet / etc.)&gt;",
+  "setting": "clean dark gradient studio backdrop",
+  "lighting": "single moody side light, dramatic shadow on the opposite side",
+  "composition": "product centered, slight tilt for visual tension",
+  "camera_lens": "Hasselblad H6D, 120mm macro f/8, tack sharp throughout",
+  "color_grade": "cool editorial darks, deep noir backdrop",
+  "preserve_case_exactly_from_reference": true,
+  "preserve_strap_exactly_from_reference": true,
+  "only_dial_face_changes": true,
+  "identity_lock_strength": "high",
+  "product_reference": "&lt;product sheet attached&gt;"
+}</code></pre>
+<h3>Result</h3>
+
+<img alt="Watch with vinyl-record dial face" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/product-shoots/commercial/08-concept.jpg"/>
+
+<p><i>1:1. The dial face is a tiny vinyl record. Hands act as the stylus arm. Case + strap are identical to the reference. Editorial wit in one composition.</i></p>
+<h3>Now ship it</h3>
+<p>This is the editorial pitch, the magazine cover, the conversation piece. Use when the brand has a story to tell beyond specs — heritage, craft, music, time, exploration. Each metaphor maps to a different campaign theme.</p>
+
+<!-- ============================ -->
+<!-- ENTRY 9 — SPLASH / EXPLODE -->
+<!-- ============================ -->
+
+<h3><b>F.P.09</b> — Splash / Explode — high-speed capture</h3>
+<p><b>Use when:</b> the brief is performance / durability / drama — dive watches, sports drinks, fragrance launches, anything that has to "break through." High-speed photography drama. Water, dust, smoke, or fluid frozen mid-action around the product.</p>
+<p><i>Uses the same product sheet as F.P.01.</i></p>
+<h3>Theme</h3>
+<p>The product is the immovable center; everything around it explodes. Water sheets wrap around the case, droplets freeze mid-air, light catches every surface. The composition reads as "nothing stops this." Peak commercial drama.</p>
+<h3>Setup recipe — the locked half</h3>
+<pre><code>{
+  "image_type": "high-speed commercial product photograph",
+  "subject": "the product from the reference image",
+  "dynamic_element": "&lt;SLOT — crystal water splash / amber liquid pour / colored smoke / dust burst&gt;",
+  "moment_capture": "frozen at the exact moment the element hits the product",
+  "setting": "pure void backdrop (black for water/smoke, white for light fluids)",
+  "lighting": "hard top-backlight catching every droplet / particle as bright highlight",
+  "camera_lens": "Phase One IQ4, 120mm macro, 1/8000 shutter freeze",
+  "color_grade": "deep noir + crystal-clear highlights + metallic product accents",
+  "preserve_product_exactly_from_reference": true,
+  "preserve_product_clarity": true,
+  "no_blur_on_product": true,
+  "identity_lock_strength": "high",
+  "product_reference": "&lt;product sheet attached&gt;"
+}</code></pre>
+<h3>Result</h3>
+
+<img alt="Watch with crystal water splash exploding around the case" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/product-shoots/commercial/09-splash.jpg"/>
+
+<p><i>4:5. Crystal water explodes around the case, droplets frozen mid-air, dial visible through the wave. Dive-watch launch register.</i></p>
+<h3>Now ship it</h3>
+<p>Performance brand launches (Garmin, Suunto, Tag Aquaracer, sports fragrances). Pair with a one-word performance claim ("200m." / "Tested." / "Sealed."). Works as a 4:5 IG hero AND as a hero frame in a 5-sec product video.</p>
+
+<!-- ============================ -->
+<!-- ENTRY 10 — HERO WITH PERSON AT SCALE -->
+<!-- ============================ -->
+
+<h3><b>F.P.10</b> — Hero with Person at Scale — heritage composition</h3>
+<p><b>Use when:</b> the brief is heritage / lifestyle / "the watch your father gave you" register. Product huge in foreground, a single elegantly-dressed person tiny in soft-focus background. IWC / Patek Philippe campaign signature. Dual-plane composition. The watch is monumental; the wearer is a memory.</p>
+<p><i>Uses the same product sheet as F.P.01.</i></p>
+<h3>Theme</h3>
+<p>Two planes in one frame. The product, huge and sharp in extreme foreground. A single elegantly-dressed figure tiny and ambient in the deep background. The composition tells the story: this product witnessed your life. Scale tension between the intimate object and the grand context.</p>
+<h3>Setup recipe — the locked half</h3>
+<pre><code>{
+  "image_type": "cinematic luxury product campaign with scale composition",
+  "subject": "the product from the reference image, placed huge in foreground",
+  "background_figure": "a tiny lone elegantly-dressed person in the deep background",
+  "background_setting": "&lt;SLOT — luxury hotel lobby / gallery / opera house / vintage office / minimalist interior&gt;",
+  "composition": "product dominates ~40% of frame in extreme foreground, background figure tiny + ambient + slightly out of focus",
+  "lighting": "dramatic single warm key on the product, soft ambient on the background",
+  "camera_lens": "Sony A7R V, 35mm GM at f/2.8 (tilt-shift effect), sharp foreground / soft luxurious background",
+  "color_grade": "warm noir, deep wood / marble tones, soft amber ambient",
+  "preserve_product_exactly_from_reference": true,
+  "no_same_scale_between_planes": true,
+  "no_busy_background": true,
+  "identity_lock_strength": "high",
+  "product_reference": "&lt;product sheet attached&gt;"
+}</code></pre>
+<h3>Result</h3>
+
+<img alt="Watch huge on walnut, tiny suited figure in hotel lobby background" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/product-shoots/commercial/10-person.jpg"/>
+
+<p><i>16:9. Watch hero on walnut, tiny suited man in soft-focus hotel lobby. IWC heritage register — scale tension between intimate object and grand context.</i></p>
+<h3>Now ship it</h3>
+<p>Use for legacy positioning — wedding / graduation / promotion-gift campaigns, Father's Day, "an inheritance, not a purchase" register. Pair with a long-form headline that earns the emotional weight ("For the moments you'll remember twice.").</p>
+
 <h2>Coming in the next pass</h2>
 <ul>
-<li><b>F.P.04 — Catalog / E-commerce</b> (clean white-background SKU sheet for product pages)</li>
-<li><b>F.P.05 — Detail Macro</b> (tight crops of premium details — dial, stitch, logo)</li>
-<li><b>F.P.06 — Group / Family Shot</b> (multiple SKUs from the same brand line in one frame)</li>
+<li><b>F.P.11 — Catalog / E-commerce</b> (clean white-background SKU sheet for product pages)</li>
+<li><b>F.P.12 — Detail Macro</b> (tight crops of premium details — dial, stitch, logo)</li>
+<li><b>F.P.13 — Group / Family Shot</b> (multiple SKUs from the same brand line in one frame)</li>
 </ul>
 <blockquote><b>The pattern stays the same.</b> Lock product (via product sheet) + grade + lens. Vary surface + context + composition. Build the shot table. Generate row by row. Same universal framework as Model Shoots — just different slots.</blockquote>
 <h2>Now ship YOUR product shoot</h2>
