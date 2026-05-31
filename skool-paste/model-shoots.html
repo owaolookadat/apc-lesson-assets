@@ -1,0 +1,217 @@
+<img alt="Frameworks · Model Shoots" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/heroes/modelshoots.jpg"/>
+<h2>What this bucket is</h2>
+<p>Model shoots are the most common paid deliverable in commercial photography — a brand, agency, or magazine commissions a set of images of a <b>person</b> (founder, model, creator, talent) wearing the brand's clothes, holding the brand's product, or just being the brand's face. Everything in this bucket has the same subject type: a human you have to keep <i>identifiably the same</i> across every shot.</p>
+<p>That's the bucket's signature constraint. Get identity wrong and the deliverable falls apart — the magazine can tell, the client can tell, the audience can tell. Everything else is a slot you can swap.</p>
+<h2>The Model-Shoot lock / variable map</h2>
+<p>Same universal pattern from the <a href="#">meta-page</a> — but here are the columns for THIS bucket:</p>
+<table>
+<tr><th>Always LOCKED for a model shoot</th><th>Always VARIABLE per shot</th></tr>
+<tr>
+<td>
+<b>Identity</b> — face, body, hair (via character sheet)<br/>
+<b>Color grade</b> — film stock or LUT-less spec<br/>
+<b>Lens family</b> — 35/50/85/100, kept consistent<br/>
+<b>Anti-keywords</b> — no AI tells, no anime eyes, no Pinterest filter
+</td>
+<td>
+<b>Setting</b> — studio / cafe / street / home / outdoor<br/>
+<b>Lighting direction + quality</b> — soft window / hard sun / studio key<br/>
+<b>Pose &amp; composition</b> — three-quarter / full body / detail<br/>
+<b>Wardrobe</b> (sometimes locked, often varied per look)
+</td>
+</tr>
+</table>
+<p>If you don't lock the identity, the set falls apart. If you don't vary the setting and light, the set looks like duplicates of one shot. Both rules at once = a real shoot.</p>
+<h2>Decision framework — picking which entry below</h2>
+<p>Three questions tell you which prompt-bank entry to grab.</p>
+<p><b>1. Where on the polish spectrum?</b></p>
+<img alt="The polish spectrum" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/meta/polish-spectrum.jpg"/>
+<p><b>2. What's the deliverable?</b></p>
+<table>
+<tr><th>If the brief says…</th><th>You want the entry…</th></tr>
+<tr><td>"Founder portrait series for our About page"</td><td><b>Editorial Portrait</b></td></tr>
+<tr><td>"Creator UGC for paid social"</td><td><b>Lifestyle / UGC</b></td></tr>
+<tr><td>"Lookbook for our DTC clothing drop"</td><td><b>Fashion Lookbook</b></td></tr>
+<tr><td>"Beauty campaign / cosmetic packaging"</td><td>Beauty (coming)</td></tr>
+<tr><td>"Sports brand ad / athlete portfolio"</td><td>Athletic (coming)</td></tr>
+</table>
+<p><b>3. Is the model an existing person or a generated one?</b></p>
+<table>
+<tr><th>If…</th><th>Then…</th></tr>
+<tr><td>Client has a real person to use</td><td>Train a Soul ID from their photos OR build a character sheet from one good shot (covered in F3).</td></tr>
+<tr><td>You're creating a synthetic model</td><td>Generate a 5-view character sheet first (covered in F3). Then use it as the reference image on every shot below.</td></tr>
+</table>
+<blockquote><b>Identity lock is non-negotiable.</b> Every entry below assumes you already have a character sheet (or trained Soul ID) for the person. If you don't, go to F3 — Identity Locking before you start a model shoot. Skipping that step is the single most common reason a generated shoot looks like a stranger family album.</blockquote>
+<h2>The prompt bank</h2>
+<p>Three paste-ready model-shoot entries below — Editorial Portrait, Lifestyle / UGC, Fashion Lookbook. Each one is one full shoot in a box: theme, locked setup, shot table, results. Pick the one that matches your brief, swap the character reference for yours, swap any slot you need to localize, hit generate row by row.</p>
+<!-- ============================ -->
+<!-- ENTRY 1 — EDITORIAL PORTRAIT  -->
+<!-- ============================ -->
+
+<h3><b>F.M.01</b> — Editorial Portrait — brand founder series</h3>
+<p><b>Use when:</b> the deliverable is a founder / creator / exec portrait set for an About page, a press feature, an editorial profile. Warm, restrained, on-brand, six shots covering studio + work + life.</p>
+<h3>Project start — input → sheet</h3>
+<p>The client gave us <b>one photo</b>. We turned it into a 5-view character sheet using <b>F-Sheet Recipe F.SHEET.01</b>. That sheet is the reference attached to every shot in the table below.</p>
+<div><p><b>Project start — input photo → sheet:</b></p><img alt="Single client input photo" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/sheets/inputs/editorial-input.jpg"/><p><b>↓ Sheet built via F-Sheet (Recipe F.SHEET.01) — attached as reference on every shot below:</b></p><img alt="5-view character sheet built from the input" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/sheets/char-sheet-demo.jpg"/></div>
+<h3>Theme</h3>
+<p>A magazine-grade editorial portrait series. Warm earth tones, Kodak Portra grade, soft natural light wherever possible, candid documentary energy. The subject is the same person across every shot; what changes is where she is, what she's doing, and how the light lands.</p>
+<h3>Setup recipe — the locked half</h3>
+<p>Paste this once per shoot. Attach the subject's character sheet as the reference image. Then for each shot below, swap the <code>setting</code>, <code>lighting</code>, and pose description, leave everything else.</p>
+<pre><code>{
+  "image_type": "editorial documentary photograph",
+  "subject": "the woman in the reference image, wearing &lt;SLOT — wardrobe&gt;",
+  "setting": "&lt;SLOT&gt;",
+  "lighting": "&lt;SLOT&gt;",
+  "camera_lens": "Sony A7R V, 50mm f/2.0, sharp focus on the eyes, shallow depth of field",
+  "color_grade": "warm-dominant, raised blacks, fine grain, Kodak Portra warmth, no heavy LUT",
+  "no_cinematic_lut": true,
+  "no_anamorphic_flare": true,
+  "no_ai_tells": true,
+  "identity_lock_strength": "high",
+  "character_reference": "&lt;character sheet attached&gt;"
+}</code></pre>
+<h3>Shot table — the variable half (8 rows, 6 scenes)</h3>
+<p>Notice rows 2 / 2b / 2c: same cafe corner, same golden hour, same outfit — only the <b>composition</b> column changes. That is the "same scene, multiple angles" move pros use. The shoot reads tighter when the locked half is allowed to genuinely hold.</p>
+<table>
+<tr><th>#</th><th>Setting</th><th>Lighting</th><th>Pose / composition</th><th>Wardrobe</th></tr>
+<tr><td>1</td><td>Clean studio, bone seamless backdrop</td><td>Soft natural daylight, key from camera-left</td><td>3/4 portrait, eyes on camera, small natural smile</td><td>Plain cream t-shirt</td></tr>
+<tr><td>2</td><td>Corner table by a cafe window</td><td>Warm golden-hour window light from camera-left</td><td>Three-quarter — looking down at a laptop</td><td>Cream knit sweater</td></tr>
+<tr><td>2b</td><td><i>Same cafe corner</i></td><td><i>Same golden hour</i></td><td><b>Wide establishing</b> — pulled back, empty chair visible</td><td><i>Same sweater</i></td></tr>
+<tr><td>2c</td><td><i>Same cafe corner</i></td><td><i>Same golden hour</i></td><td><b>Profile, window backlit</b> — clean silhouette, rim light on hair</td><td><i>Same sweater</i></td></tr>
+<tr><td>3</td><td>Home office, wood desk + wall of books</td><td>Diffused window light from camera-right, soft</td><td>Holding an open notebook, head toward window</td><td>Relaxed knit cardigan over t-shirt</td></tr>
+<tr><td>4</td><td>Quiet city street, weathered brick wall</td><td>Overcast diffused daylight, no harsh shadows</td><td>Mid-stride, candid, looking ahead</td><td>Camel coat over cream knit</td></tr>
+<tr><td>5</td><td>Wooden table, blurred warm cafe behind</td><td>Soft window key from camera-left</td><td>Hands holding a coffee cup — no face in frame</td><td>Cream sweater cuff visible</td></tr>
+<tr><td>6</td><td>Architectural loft, large window + exposed brick</td><td>Dominant soft window natural light</td><td>Sitting on a windowsill, small in frame, full body</td><td>Cream t-shirt</td></tr>
+</table>
+<h3>Results — the actual generated set</h3>
+<p>Same character sheet on every shot. Same setup recipe. Eight rows = eight images that read like one shoot. The three green-highlighted cafe rows above land as three legitimate frames of the same moment — the kind of triplet a working photographer would ship together.</p>
+
+<img alt="Shot 01 studio" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/editorial/01-studio.jpg"/>
+<img alt="Shot 02 cafe — three-quarter" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/editorial/02-cafe.jpg"/>
+<img alt="Shot 02b — same cafe, wide establishing" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/editorial/02b-cafewide.jpg"/>
+<img alt="Shot 02c — same cafe, profile window backlit" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/editorial/02c-cafeprofile.jpg"/>
+<img alt="Shot 03 office" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/editorial/03-office.jpg"/>
+<img alt="Shot 04 street" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/editorial/04-street.jpg"/>
+<img alt="Shot 05 detail hands" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/editorial/05-hands.jpg"/>
+<img alt="Shot 06 environmental wide" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/editorial/06-loft.jpg"/>
+
+<p><i>Eight rows in the shot table, eight paste-and-generate calls, one coherent shoot. The cafe trio shows what locking actually buys you: same world, three legitimate angles.</i></p>
+<blockquote><b>Watch the trio.</b> Sweater identical. Window identical. Light direction identical. Mug identical. Only the camera moved. That's how you know the locked half held.</blockquote>
+<h3>Now ship it</h3>
+<p>Swap the character reference (replace this woman with your client's founder). Re-run the same rows. You have a different founder's shoot in one render session. Then pick one or two of <i>your</i> scenes and add their 2b / 2c angles — your six-shot shoot becomes a nine-shot shoot for the cost of two extra generations.</p>
+
+<!-- ============================ -->
+<!-- ENTRY 2 — LIFESTYLE / UGC    -->
+<!-- ============================ -->
+
+<h3><b>F.M.02</b> — Lifestyle / UGC — creator + product</h3>
+<p><b>Use when:</b> the brief is paid social, creator content, or any "feels-like-a-real-customer" deliverable. iPhone aesthetic, slightly imperfect framing, product naturally in frame across day-in-the-life moments.</p>
+<h3>Project start — input → sheet</h3>
+<p>The client (a wellness brand) gave us <b>one creator headshot</b>. We turned it into a 5-view character sheet via <b>F-Sheet Recipe F.SHEET.01</b>. That sheet is the reference attached to every UGC shot below — even though the final shots look hand-held and phone-shot, the underlying identity is locked.</p>
+<div><p><b>Project start — input photo → sheet:</b></p><img alt="Single creator input photo" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/sheets/inputs/ugc-input.jpg"/><p><b>↓ Sheet built via F-Sheet (Recipe F.SHEET.01) — attached as reference on every shot below:</b></p><img alt="5-view UGC character sheet built from the input" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/sheets/ugc-sheet-demo.jpg"/></div>
+<h3>Theme</h3>
+<p>A wellness / skincare creator's day with the product — six shots from morning unboxing to on-the-go. Reads as <i>filmed on a phone</i>, not on a studio rig. The product appears in every shot but isn't the hero of every shot — it's part of his life.</p>
+<blockquote><b>The realism lock — read this before you generate.</b> UGC fails the second it looks polished. The most important keys below are the anti-polish ones: <b>visible skin texture</b>, <b>pores</b>, <b>micro-imperfections</b>, <b>NO beauty filter</b>, <b>NO skin smoothing</b>, <b>NO DSLR look</b>. Without those, every model defaults to studio-polish and the shoot reads as an ad pretending to be UGC. With them, the same person looks real.</blockquote>
+<h3>Setup recipe — the locked half</h3>
+<pre><code>{
+  "image_type": "iPhone candid photograph, NOT a professional shoot",
+  "subject": "the man in the reference image, &lt;SLOT — wardrobe&gt;",
+  "product": "a clean amber-glass dropper bottle, ~80ml, minimal cream label",
+  "setting": "&lt;SLOT&gt;",
+  "lighting": "&lt;SLOT — always natural, often harsh/unbalanced&gt;",
+  "camera_lens": "iPhone 15 Pro main lens, hand-held, slight tilt, candid framing",
+  "color_grade": "natural with slight uneven warm/cool cast, true-to-life skin tones",
+  "skin_texture": "visible pores, micro-asymmetry, slight redness, light stubble, NOT retouched",
+  "no_beauty_filter": true,
+  "no_skin_smoothing": true,
+  "no_studio_polish": true,
+  "no_dslr_look": true,
+  "no_commercial_perfection": true,
+  "identity_lock_strength": "high",
+  "character_reference": "&lt;character sheet attached&gt;"
+}</code></pre>
+<h3>Shot table — the variable half (5 shots)</h3>
+<table>
+<tr><th>#</th><th>Setting</th><th>Lighting</th><th>Action / composition</th><th>Wardrobe</th></tr>
+<tr><td>1</td><td>Morning bedroom, rumpled linen bedding, wood headboard</td><td>Harsh single window light from camera-left, clipped highlights</td><td>Candid unwrapping a cardboard package, slight smile, looking down</td><td>Plain navy t-shirt</td></tr>
+<tr><td>2</td><td>Home bathroom, white tile, fingerprint-smudged mirror</td><td>Soft side window light, mirror glare visible</td><td>Mirror selfie holding bottle at face height, iPhone visible</td><td>Plain navy t-shirt</td></tr>
+<tr><td>3</td><td>Implied bedroom corner</td><td>Soft afternoon window light from camera-left, slight focus softness</td><td>Hands close-up, bottle against a chunky oatmeal knit — no face</td><td>Oatmeal knit sweater cuff visible</td></tr>
+<tr><td>4</td><td>Lived-in modern kitchen, real domestic clutter</td><td>Harsh direct morning sun from camera-right, deep shadow</td><td>At counter, mug of coffee, bottle on counter, looking out the window</td><td>Wrinkled gray t-shirt</td></tr>
+<tr><td>5</td><td>Apartment hallway / front door entryway, sneakers near the door</td><td>Mixed harsh outdoor light from open door + dim indoor ambient</td><td>Behind-the-shoulder mid-stride, gym bag with bottle in side pocket</td><td>Gray zip hoodie</td></tr>
+</table>
+<h3>Results</h3>
+
+<img alt="UGC unboxing" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/ugc/01-unbox.jpg"/>
+<img alt="UGC bathroom mirror" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/ugc/02-mirror.jpg"/>
+<img alt="UGC hands close-up" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/ugc/03-hands.jpg"/>
+<img alt="UGC kitchen morning" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/ugc/04-kitchen.jpg"/>
+<img alt="UGC on-the-go" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/ugc/05-onthego.jpg"/>
+
+<p><i>Look at the mirror shot: fingerprint smudges, slight redness around the nose, no glamour. The unboxing shot: visible arm hair, casual tilt to the framing, off-center. That's what the anti-polish lock buys — a person, not a model.</i></p>
+<h3>Now ship it</h3>
+<p>Swap the product to your client's SKU. Keep the character. Swap one or two settings for the brand's actual world. The anti-polish locks are doing the heavy lifting — students often try to "improve" these by removing the imperfections, and accidentally re-make an ad. Resist. Keep the skin-texture key.</p>
+
+<!-- ============================ -->
+<!-- ENTRY 3 — FASHION LOOKBOOK   -->
+<!-- ============================ -->
+
+<h3><b>F.M.03</b> — Fashion Editorial — magazine drop</h3>
+<p><b>Use when:</b> the brief is a fashion brand's editorial campaign, a magazine spread, a cover-style image. One model, multiple looks, deliberately <i>polarizing</i> poses — angular, expressive, dropped-shoulder, head-tilted-away. The clothes are the variable; the model + the editorial intensity are the constants.</p>
+<h3>Project start — input → sheet</h3>
+<p>The agency gave us <b>one test shot</b> of the model. We turned it into a 5-view character sheet via <b>F-Sheet Recipe F.SHEET.01</b>. That sheet locks the model's identity across every editorial look — so wardrobe is the variable but the face holds across the whole spread.</p>
+<div><p><b>Project start — input photo → sheet:</b></p><img alt="Single model input photo" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/sheets/inputs/fashion-input.jpg"/><p><b>↓ Sheet built via F-Sheet (Recipe F.SHEET.01) — attached as reference on every shot below:</b></p><img alt="5-view fashion character sheet built from the input" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/sheets/fash-sheet-demo.jpg"/></div>
+<blockquote><b>Why this looks different from the UGC entry.</b> Editorial fashion is not approachable. It is the opposite of approachable — it is angular, deliberate, sometimes uncomfortable. A lookbook that gives you "model standing with hands in pockets" reads as a DTC catalog. A lookbook that gives you a dropped shoulder, a twisted torso, a head tilted at a sharp angle reads as a magazine. That is the editorial choice, and that choice has to be IN your prompt.</blockquote>
+<h3>Theme</h3>
+<p>Helmut Lang / The Row / Rick Owens editorial energy. Hard sculptural side light, deep editorial contrast, angular and confident posing. The model is detached and graphic, not warm and friendly. Skin texture stays visible — modern editorial embraces the real face.</p>
+<h3>Setup recipe — the locked half</h3>
+<pre><code>{
+  "image_type": "editorial fashion magazine photograph",
+  "subject": "the woman in the reference image, wearing &lt;SLOT — outfit&gt;",
+  "setting": "&lt;SLOT — clean studio cyc, color noted&gt;",
+  "lighting": "single dramatic hard side light from camera-right, deep editorial contrast, sculptural shadow",
+  "camera_lens": "Hasselblad H6D, 80mm f/4, sharp throughout, editorial-aggressive framing",
+  "color_grade": "cool neutral editorial, deep blacks, faithful skin tones, restrained",
+  "pose_register": "angular, deliberate, dropped shoulder, twisted torso, head tilted, gaze detached",
+  "no_catalog_pose": true,
+  "no_hands_in_pockets": true,
+  "no_pinterest_filter": true,
+  "no_anime_polish": true,
+  "no_dtc_blandness": true,
+  "identity_lock_strength": "high",
+  "character_reference": "&lt;character sheet attached&gt;"
+}</code></pre>
+<h3>Shot table — the variable half (5 shots)</h3>
+<table>
+<tr><th>#</th><th>Setting</th><th>Outfit (the lookbook's variable)</th><th>Pose / composition</th></tr>
+<tr><td>1</td><td>Bone-white cyc</td><td>Oversized cream chunky knit + wide cream trousers</td><td>Weight dramatically on one hip, shoulder dropped, head tilted away, gaze down</td></tr>
+<tr><td>2</td><td>Dark-gray gradient cyc</td><td>Black single-breasted suit, no shirt under, deep V</td><td>Hand at back of neck, elbow up, head tilted down, eyes up at camera</td></tr>
+<tr><td>3</td><td>Bone-white cyc</td><td>Silk slip dress under vintage leather jacket falling off one shoulder</td><td>Leaning back, weight on heel, wrist twisted, bored-cool expression</td></tr>
+<tr><td>4</td><td>Warm-gray painted backdrop</td><td>Indigo denim + crisp white tee tucked in</td><td>Caught mid-turn, looking back over shoulder, hard shadow on backdrop</td></tr>
+<tr><td>5</td><td>Pure black seamless</td><td>Thin black turtleneck (close-up)</td><td>Head tilted sharply, intense gaze, hand grazing under jaw, cover crop</td></tr>
+</table>
+<h3>Results</h3>
+
+<img alt="Look 01 — angular knit" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/fashion/01-knit.jpg"/>
+<img alt="Look 02 — suit confrontation" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/fashion/02-suit.jpg"/>
+<img alt="Look 03 — slip + leather" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/fashion/03-slip.jpg"/>
+<img alt="Look 04 — denim turn" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/fashion/04-denim.jpg"/>
+<img alt="Look 05 — cover close-up" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/model-shoots/fashion/07-cover.jpg"/>
+
+<p><i>One model. Five looks. Light + lens + grade locked. Pose register locked at "editorial angular." The clothes change; the editorial intensity does not.</i></p>
+<blockquote><b>The pose-register lock is the secret here.</b> If you only lock light + grade + lens, every shot drifts toward catalog poise. Adding <code>pose_register</code> as a locked key — "angular, dropped shoulder, twisted torso, head tilted, gaze detached" — forces the model into editorial territory on every row, even when the only thing changing is wardrobe.</blockquote>
+<h3>Now ship it</h3>
+<p>Replace the five outfits with your client's hero pieces. Keep the editorial recipe. Generate. The shoot reads as a magazine spread, not a catalog. If the client wants a softer version, weaken the pose register one notch (drop "dropped shoulder," keep "head tilted, gaze detached"). If they want more confrontation, push the lighting harder (add "single hard rim light, deep noir contrast").</p>
+
+<h2>Now use the template on your own shoot</h2>
+<p>You've read three worked entries. The next step is filling in the blank version for a shoot YOU run. Open <b>The Shoot Template</b> in this classroom — it gives you the five blocks (theme, polish point, locked recipe, shot table, generate-and-track grid) plus a final QC checklist.</p>
+<p>Don't generate until every block is full. That's the discipline that turns a generator into a shoot.</p>
+<h2>From shoot to ad — Creative Ads</h2>
+<p>A coherent shoot is not the deliverable. The <b>deliverable is the posted ad.</b> Open <b>Creative Ads</b> in this classroom to see three worked examples of the full pipeline: character sheet → shoot framework → 5-card carousel with headline overlay → posted ad + paid-exposure-ad version. Every entry above on this page is the input to that pipeline.</p>
+<blockquote><b>The prerequisite to this page is a character sheet.</b> If you don't have one yet, run the <b>F-Sheet</b> lesson in Foundations first. Five minutes of setup buys you every shot on this page (and on Creative Ads) for the rest of the project.</blockquote>
+<h2>Coming in the next pass</h2>
+<ul>
+<li><b>F.M.04 — Beauty / Cosmetic</b> (clean macro, controlled light, ingredient drama)</li>
+<li><b>F.M.05 — Athletic / Action</b> (1 athlete, peak-moment poses, behind-the-scenes)</li>
+<li><b>F.M.06 — Documentary / Editorial Reportage</b> (full candid, location-driven, no posing)</li>
+</ul>
+<blockquote><b>The pattern stays the same.</b> Lock identity + grade + lens (+ pose register if editorial; + skin texture if raw). Vary setting + lighting + composition. Build the shot table. Generate row by row. The bucket changes only what's in the columns.</blockquote>

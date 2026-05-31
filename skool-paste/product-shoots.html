@@ -1,0 +1,151 @@
+<img alt="Frameworks · Product Shoots" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/heroes/productshoots.jpg"/>
+<h2>Product Shoots — the bucket page</h2>
+<p>Product shoots are the second-biggest paid deliverable in commercial work: a brand commissions a set of images of <b>an object</b> (a watch, a bottle, a candle, a sneaker, a piece of furniture) for an ad campaign, a launch, an editorial spread, an e-commerce listing. Everything in this bucket has the same subject type: an inanimate object you have to keep <i>identifiably the same</i> across every shot.</p>
+<p>That's the constraint. Get the product wrong — a different finish here, a different dial face there — and the deliverable falls apart. Same as Model Shoots, different subject.</p>
+<h2>The Product-Shoot lock / variable map</h2>
+<p>Same universal pattern from the meta-page. Different columns:</p>
+<table>
+<tr><th>Always LOCKED for a product shoot</th><th>Always VARIABLE per shot</th></tr>
+<tr>
+<td>
+<b>Product identity</b> — exact case, dial, finish, logo (via product sheet)<br/>
+<b>Color grade</b> — film stock or LUT-less spec<br/>
+<b>Camera + lens</b> — Phase One 120mm macro / Sony 85mm / etc.<br/>
+<b>Anti-keywords</b> — no CGI look, no 3D render tells, no fake macro
+</td>
+<td>
+<b>Surface</b> — studio cyc / walnut desk / linen / slate<br/>
+<b>Setting context</b> — pristine / lifestyle / tabletop still-life<br/>
+<b>Angle + framing</b> — hero / detail macro / wide context<br/>
+<b>Lighting</b> (sometimes locked, often varied per look)
+</td>
+</tr>
+</table>
+<blockquote><b>Product sheet first, always.</b> Before you do any shoot in this bucket, you need a 5-angle <b>product sheet</b> (see the F-PSheet lesson in Foundations). Without one, every shot will produce a subtly different version of the SKU. With one, you can run a 12-shot campaign and ship every frame.</blockquote>
+<h2>Decision framework — picking which entry</h2>
+<p><b>1. Where on the polish spectrum?</b></p>
+<img alt="Polish spectrum" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/meta/polish-spectrum.jpg"/>
+<p>Product shoots almost always sit LEFT on the spectrum — campaign / hero. The exception is UGC product (creator with bottle in hand), which belongs in the Model Shoots bucket because the human is the subject.</p>
+<p><b>2. What's the deliverable?</b></p>
+<table>
+<tr><th>If the brief says…</th><th>You want the entry…</th></tr>
+<tr><td>"Hero image for the product launch"</td><td><b>F.P.01 — Hero / Marquee</b></td></tr>
+<tr><td>"Lifestyle context for the campaign page"</td><td><b>F.P.02 — Lifestyle Context</b></td></tr>
+<tr><td>"Editorial still-life for the magazine"</td><td><b>F.P.03 — Tabletop Still Life</b></td></tr>
+<tr><td>"Clean white-background e-commerce SKU"</td><td>Catalog (coming)</td></tr>
+<tr><td>"Macro detail of a specific feature"</td><td>Detail Macro (coming)</td></tr>
+</table>
+<!-- ============================ -->
+<!-- ENTRY 1 — HERO / MARQUEE      -->
+<!-- ============================ -->
+
+<h3><b>F.P.01</b> — Hero / Marquee — product launch image</h3>
+<p><b>Use when:</b> the brief is a product launch, a website hero banner, the top of a campaign page, a paid ad's hero card. One product, one angle (the marquee three-quarter), maximum production polish, clean negative space for copy.</p>
+<h3>Project start — input → sheet</h3>
+<p>The client (a watch brand) gave us <b>one studio photo</b> of the SKU. We turned it into a 5-angle product sheet via <b>F-PSheet Recipe F.PSHEET.01</b>. That sheet is the reference attached to every product shot in this entire bucket — hero, lifestyle, and tabletop all reference the same sheet, which is how the watch reads as the SAME watch across every frame.</p>
+<div><p><b>Project start — input photo → sheet:</b></p><img alt="Single product input photo" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/sheets/inputs/watch-input.jpg"/><p><b>↓ Sheet built via F-Sheet (Recipe F.SHEET.01) — attached as reference on every shot below:</b></p><img alt="5-angle product sheet built from the input" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/sheets/product-sheet-demo.jpg"/></div>
+<h3>Theme</h3>
+<p>Premium minimalist launch image. Dark moody backdrop, controlled product specular highlights, sculptural lighting that respects the brand's premium positioning. The composition leaves the top third clean — that's where the headline goes when this becomes a paid ad.</p>
+<h3>Setup recipe — the locked half</h3>
+<p>Paste this once per launch. Attach the product sheet (from F-PSheet) as the reference image. The variable for this entry is essentially just the lighting direction and the backdrop tone — everything else holds.</p>
+<pre><code>{
+  "image_type": "premium product hero photograph for launch campaign",
+  "subject": "the product from the reference image — do not redescribe the case, dial, or finish",
+  "angle": "three-quarter hero, marquee angle, centered in frame",
+  "setting": "&lt;SLOT — dark moody backdrop OR clean studio cyc&gt;",
+  "surface": "&lt;SLOT — polished dark slate OR seamless white OR walnut&gt;",
+  "lighting": "&lt;SLOT — single soft top-key + subtle fill OR three-point hero&gt;",
+  "negative_space": "deliberate clean space top third for headline copy overlay",
+  "camera_lens": "Phase One IQ4, 120mm macro f/8, tack sharp throughout",
+  "color_grade": "premium editorial, deep blacks, faithful metallic accents, controlled specular highlights",
+  "preserve_product_exactly_from_reference": true,
+  "no_cgi_look": true,
+  "no_3d_render_tells": true,
+  "no_fake_macro": true,
+  "no_blown_highlights": true,
+  "identity_lock_strength": "high",
+  "product_reference": "&lt;product sheet attached&gt;"
+}</code></pre>
+<h3>Result</h3>
+
+<img alt="Watch hero marquee, dark slate, 4:5 IG-ready" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/product-shoots/hero/01-marquee.jpg"/>
+
+<p><i>4:5 aspect, clean top third for copy. This image is the source for the Product Launch Ad entry on the Creative Ads page.</i></p>
+<h3>Now ship it</h3>
+<p>Swap the product reference for any SKU you have a sheet for. The recipe holds. The dark moody / negative-space-top combo is a launch-ad template — it works for watches, fragrance, headphones, premium hardware, anything where the brand wants a controlled "drop" aesthetic.</p>
+
+<!-- ============================ -->
+<!-- ENTRY 2 — LIFESTYLE CONTEXT   -->
+<!-- ============================ -->
+
+<h3><b>F.P.02</b> — Lifestyle Context — product in the world</h3>
+<p><b>Use when:</b> the brief is the second slide of a launch, a campaign page mid-scroll, a Pinterest editorial pin, an "in the wild" social post. The product is still the hero but it's placed inside a believable lifestyle moment — a hand wearing it, a desk holding it, a counter staging it.</p>
+<p><i>Uses the same product sheet as F.P.01 above — one sheet, three campaign entries. That's the leverage.</i></p>
+<h3>Theme</h3>
+<p>Editorial lifestyle context. Premium magazine aesthetic. The product is the focal point but the world around it tells a story — who owns this, where they are, what their day looks like. Warm directional window light, deep editorial shadow, a single character body part (hand, wrist, forearm) optionally in frame.</p>
+<h3>Setup recipe — the locked half</h3>
+<pre><code>{
+  "image_type": "lifestyle product photograph, premium magazine context",
+  "subject": "the product from the reference image — do not redescribe",
+  "context": "&lt;SLOT — wrist on desk OR hand picking up OR counter staging&gt;",
+  "setting": "&lt;SLOT — walnut desk + leather portfolio OR linen counter + ceramics&gt;",
+  "lighting": "warm directional window light, deep editorial shadow",
+  "camera_lens": "Sony A7R V, 85mm f/2.8, shallow depth of field, tack-sharp on the product",
+  "color_grade": "cool editorial, warm window highlight, raised blacks, premium magazine palette",
+  "preserve_product_exactly_from_reference": true,
+  "no_cgi_look": true,
+  "no_oversaturated_lifestyle_stock": true,
+  "identity_lock_strength": "high",
+  "product_reference": "&lt;product sheet attached&gt;"
+}</code></pre>
+<h3>Result</h3>
+
+<img alt="Watch lifestyle on wrist, walnut desk context" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/product-shoots/lifestyle/01-wrist.jpg"/>
+
+<p><i>Same watch as F.P.01. Now in context: a man's wrist resting on a walnut desk, leather portfolio behind, warm window light. The product is identical because both shots reference the same product sheet.</i></p>
+<h3>Now ship it</h3>
+<p>For a campaign, run F.P.01 + F.P.02 + F.P.03 from the same product sheet. You have a hero, a lifestyle, and a still-life. That's a full launch campaign in 3 generations, all identity-locked to the same SKU.</p>
+
+<!-- ============================ -->
+<!-- ENTRY 3 — TABLETOP STILL LIFE -->
+<!-- ============================ -->
+
+<h3><b>F.P.03</b> — Tabletop Still Life — editorial flat-lay</h3>
+<p><b>Use when:</b> the brief is a magazine spread, a 1:1 Instagram square, a gift-guide editorial. The product is centered in a curated context — a few editorial-styled objects arranged asymmetrically around it. Top-down composition, soft directional light, deliberate negative space.</p>
+<p><i>Uses the same product sheet as F.P.01 above. Same watch, third campaign slot.</i></p>
+<h3>Theme</h3>
+<p>Luxury magazine still-life. The product is the hero but it shares the frame with a few intentional context items that tell a mood (coffee + sage + paper for a quiet morning, leather + brass + ink for a serious workspace). Not a cluttered flat-lay — three to five items, asymmetric, deliberate.</p>
+<h3>Setup recipe — the locked half</h3>
+<pre><code>{
+  "image_type": "premium product tabletop still life, magazine editorial",
+  "subject": "the product from the reference image — do not redescribe",
+  "context_items": "&lt;SLOT — pick 3-5 editorial items that match the product mood&gt;",
+  "surface": "&lt;SLOT — linen / walnut / slate / paper&gt;",
+  "composition": "top-down, asymmetric, product in lower-left or right third, deliberate negative space",
+  "lighting": "soft directional window light, deep editorial shadow on one side",
+  "camera_lens": "Phase One IQ4, 80mm f/5.6, deep focus throughout",
+  "color_grade": "warm-neutral editorial, raised blacks, faithful tones, premium minimalist palette",
+  "preserve_product_exactly_from_reference": true,
+  "no_cluttered_flatlay": true,
+  "no_pinterest_filter": true,
+  "no_stock_photo_lighting": true,
+  "identity_lock_strength": "high",
+  "product_reference": "&lt;product sheet attached&gt;"
+}</code></pre>
+<h3>Result</h3>
+
+<img alt="Watch tabletop still life with coffee beans and sage" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/product-shoots/tabletop/01-stilllife.jpg"/>
+
+<p><i>1:1 square. Same watch. Now in a curated still-life: linen surface, matte-black dish with coffee beans, a dried sage leaf, a folded cream paper. Soft window light, deep editorial shadow. Perfect for an IG carousel mid-card.</i></p>
+<h3>Now ship it</h3>
+<p>This is the format that doubles as both editorial AND e-commerce gift-guide content. One shot can land in a magazine spread and in a paid social ad on the same day. Swap the context items to match seasonal moods (autumn = leather + spices + amber; spring = ceramics + cream + green) and you have a year-long content calendar from one product sheet.</p>
+
+<h2>Coming in the next pass</h2>
+<ul>
+<li><b>F.P.04 — Catalog / E-commerce</b> (clean white-background SKU sheet for product pages)</li>
+<li><b>F.P.05 — Detail Macro</b> (tight crops of premium details — dial, stitch, logo)</li>
+<li><b>F.P.06 — Group / Family Shot</b> (multiple SKUs from the same brand line in one frame)</li>
+</ul>
+<blockquote><b>The pattern stays the same.</b> Lock product (via product sheet) + grade + lens. Vary surface + context + composition. Build the shot table. Generate row by row. Same universal framework as Model Shoots — just different slots.</blockquote>
+<h2>Now ship YOUR product shoot</h2>
+<p>Open <b>The Shoot Template</b> in this classroom. Fill in the five blocks for your product. Generate the three entries above as a launch trio. Then jump to <b>Creative Ads</b> for the IG-ready overlay version.</p>

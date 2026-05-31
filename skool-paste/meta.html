@@ -1,0 +1,117 @@
+<img alt="Frameworks · How a shoot is built" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/heroes/meta.jpg"/>
+<h2>What this section is</h2>
+<p>Every paying client buys a <b>shoot</b>, not a shot. A shoot is a coherent set of images that share a visual identity — same person, same world, same grade — across a deliberate list of moments. The Frameworks Library teaches the one thinking pattern that builds any kind of shoot, then gives you paste-ready templates for the most common ones.</p>
+<p>F1–F5 taught you how to direct a single still and a single clip. <b>This is how you direct a set.</b></p>
+<h2>The universal pattern</h2>
+<p>Every shoot has two halves — a <b>locked</b> half and a <b>variable</b> half. The locked half is what gives the set its coherent identity. The variable half is what gives it variety.</p>
+<img alt="Universal shoot framework flowchart" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/meta/flowchart.jpg"/>
+
+<p>Five boxes. Four arrows. That diagram is the whole skill.</p>
+<h2>Stage 1 — the Theme</h2>
+<p>Before any prompt, you decide the <b>theme</b>: who's the client, what's the deliverable, what mood. A theme is one sentence:</p>
+<pre><code>An editorial portrait series of a brand founder —
+warm, restrained, Kodak Portra grade, six shots
+across studio, work, and life moments.</code></pre>
+<p>The theme is what decides the split. Same model, same grade across every shot = locked. Different setting, lighting, pose per shot = variable. The theme tells you which ingredients belong on which side.</p>
+<h2>Stage 2 — the Master Setup Recipe</h2>
+<p>The locked half goes into one JSON — the <b>master setup</b>. Every shot in the set will paste this as its base and only swap the variable slots.</p>
+<pre><code>{
+  "image_type": "editorial documentary photograph",
+  "subject": "&lt;character lock — see reference image&gt;",
+  "setting": "&lt;SLOT&gt;",
+  "lighting": "&lt;SLOT&gt;",
+  "camera_lens": "Sony A7R V, 50mm f/2.0, sharp focus on the eyes, shallow depth",
+  "color_grade": "warm-dominant, raised blacks, fine grain, Kodak Portra warmth, no heavy LUT",
+  "no_cinematic_lut": true,
+  "no_anamorphic_flare": true,
+  "no_ai_tells": true,
+  "identity_lock_strength": "high",
+  "character_reference": "&lt;attached&gt;"
+}</code></pre>
+<p>The <code>&lt;SLOT&gt;</code> markers are the variable half. Everything else holds.</p>
+<h2>Stage 3 — the Shot Table</h2>
+<p>The variable half goes into a flat table. One row per shot. Columns = the slots. This is your shot brief in one glance:</p>
+<table>
+<tr><th>#</th><th>Setting</th><th>Lighting</th><th>Pose / composition</th></tr>
+<tr><td>1</td><td>Clean studio, bone backdrop</td><td>Soft natural daylight, key from left</td><td>Three-quarter portrait, eyes on camera</td></tr>
+<tr><td>2</td><td>Quiet cafe, by a window</td><td>Golden hour through window</td><td>Looking down at a laptop, candid</td></tr>
+<tr><td>3</td><td>Home office, wood desk + books</td><td>Diffused window, soft</td><td>Holding a notebook, head toward window</td></tr>
+<tr><td>4</td><td>City street, weathered brick wall</td><td>Overcast, soft diffused</td><td>Mid-stride, candid, looking ahead</td></tr>
+<tr><td>5</td><td>Wooden table, blurred cafe behind</td><td>Soft window, warm side light</td><td>Hands holding a coffee cup — no face</td></tr>
+<tr><td>6</td><td>Architectural loft, big window</td><td>Dominant natural window</td><td>Wide environmental, subject small in frame</td></tr>
+</table>
+<h2>Worked example — what Row 1 actually looks like</h2>
+<p>The recipe + the shot table feel abstract until you see one row turned into a real prompt. Here is Row 1 of the table above, with every <code>&lt;SLOT&gt;</code> from the recipe replaced by Row 1's values. This is the string you paste into your generator.</p>
+<pre><code>{
+  "image_type": "editorial documentary photograph",
+  "subject": "&lt;character lock — see reference image&gt;",
+  "setting": "clean studio, bone-white seamless backdrop",
+  "lighting": "soft natural daylight, key from camera-left, gentle fill",
+  "pose": "three-quarter portrait, eyes on camera, relaxed shoulders",
+  "camera_lens": "Sony A7R V, 50mm f/2.0, sharp focus on the eyes, shallow depth",
+  "color_grade": "warm-dominant, raised blacks, fine grain, Kodak Portra warmth, no heavy LUT",
+  "no_cinematic_lut": true,
+  "no_anamorphic_flare": true,
+  "no_ai_tells": true,
+  "identity_lock_strength": "high",
+  "character_reference": "&lt;attached&gt;"
+}</code></pre>
+<p>Compare it to Stage 2: the locked keys are byte-for-byte identical. Only three values changed — setting, lighting, pose — because those are the columns the shot table varies. Row 2 will paste the same JSON and change only those same three lines. That is the entire trick.</p>
+<h2>Stage 4 — Generate row by row</h2>
+<p>Each row gets one generate call: <i>master recipe + this row's slot values + character reference</i>. Six rows = six generations. Same identity, same grade, six different moments.</p>
+<p>This is where it pays back. You don't write six prompts — you write one recipe and fill six rows. When the brief changes (new client, new mood), you keep the table structure and rewrite the recipe.</p>
+<h2>Stage 5 — the Coherent Set</h2>
+<p>You now have a deliverable. Six images that read like one shoot — because the model was held constant on every locked ingredient. The variety is deliberate, not accidental.</p>
+<blockquote><b>Why this matters commercially.</b> A magazine, a brand, an agency — they don't pay you per image. They pay you for a <i>set</i> that ships as a campaign. Mastering the locked/variable split is what turns generations into shoots, and shoots into deliverables.</blockquote>
+<h2>Decision framework — picking your split</h2>
+<p>Before you write the recipe, two decisions tell you what to lock.</p>
+<p><b>Decision A — what's the deliverable for?</b></p>
+<table>
+<tr><th>If the deliverable is…</th><th>You're shooting…</th></tr>
+<tr><td>An ad campaign / brand launch</td><td>Polished commercial — lock lighting + grade hard</td></tr>
+<tr><td>Social organic / creator content</td><td>UGC — lock identity but variable phone-feel</td></tr>
+<tr><td>Website / press / lookbook</td><td>Editorial — lock grade + lens, variable setting</td></tr>
+<tr><td>Catalog / e-commerce</td><td>Studio packshot — lock everything except the SKU</td></tr>
+</table>
+<p><b>Decision B — where on the polish spectrum?</b> One axis. Pick a point. That choice drives every locked ingredient.</p>
+<img alt="The polish spectrum — five stops from studio to documentary" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/meta/polish-spectrum.jpg"/>
+<p>The further left you sit, the harder you lock lighting + grade. The further right you sit, the more you lock identity and let the rest feel hand-held.</p>
+<h2>Polished or raw — both are valid choices</h2>
+<p>The spectrum used to map to "good versus bad." That is no longer true. Modern commercial work — beauty, wellness, fashion, hospitality — is actively choosing realism. Visible pores, micro-asymmetry, uneven light, slight imperfection. Brands buy it because audiences read it as <i>real</i>, and real outperforms perfect in feeds and conversion.</p>
+<p>When you write your recipe, decide on purpose which side you're shooting.</p>
+<table>
+<tr><th>If you want polished</th><th>If you want raw</th></tr>
+<tr><td>Lock studio lighting and a clean LUT-style grade</td><td>Lock identity hard, leave light uneven</td></tr>
+<tr><td>Wardrobe styled, hair done, makeup deliberate</td><td>Wardrobe casual, hair natural, no glam</td></tr>
+<tr><td>Anti-keywords: anti-grain, anti-blur, anti-imperfection</td><td>Anti-keywords: NO beauty filter, NO skin smoothing, NO studio polish, NO DSLR look</td></tr>
+<tr><td>Add to prompt: "campaign quality, magazine sharp"</td><td>Add to prompt: "visible skin texture, pores, micro-asymmetry, true-to-life skin tones"</td></tr>
+</table>
+<blockquote><b>The skin-texture phrase is the single most important addition for "raw."</b> Without it, every model tends to default to polished. With it, the same recipe produces a real human you'd believe the photo of.</blockquote>
+<h2>Same scene, multiple angles — the move pros use</h2>
+<p>A working shoot does not give you one shot per scene. It gives you 2–4 angles of each setup. Wide establishing, profile, close-up of hands, reverse over-the-shoulder. Same coffee, same window, same light — the variation is composition, not setting.</p>
+<p>When you write your shot table, allow yourself rows at the <i>same</i> setting where only the <b>composition</b> column changes. The locked half holds; the variable half barely moves; the set reads as a <i>shoot</i> instead of a slideshow of separate moments.</p>
+<table>
+<tr><th>#</th><th>Setting</th><th>Light</th><th>Composition</th></tr>
+<tr><td>2</td><td>Cafe corner, by window</td><td>Golden hour through window</td><td>Three-quarter looking down at laptop</td></tr>
+<tr><td>2b</td><td>Same cafe corner</td><td>Same golden hour</td><td><b>Wide establishing</b> — pulled back, empty chair visible</td></tr>
+<tr><td>2c</td><td>Same cafe corner</td><td>Same golden hour</td><td><b>Profile, window backlit</b> — silhouette rim-lit by window</td></tr>
+</table>
+<p>Three shots, one setup, three different reads. See the Model Shoots bucket page for what this looks like in practice.</p>
+<h2>Where to go next</h2>
+<p>The pattern is universal. The slot names are what change per bucket. Go to the bucket that matches your shoot:</p>
+<ul>
+<li><b>Model Shoots</b> — humans as subject. Editorial portrait, fashion lookbook, UGC, beauty, athletic.</li>
+<li><b>Product Shoots</b> — objects as subject. Hero / macro, catalog, lifestyle product, premium, jewelry, tabletop.</li>
+<li><b>Scene &amp; Architecture</b> — place as subject. Exterior, interior, hospitality, travel.</li>
+<li><b>Food</b> — dish as subject. Editorial food, restaurant menu, cookbook, drinks, ingredient flat-lay.</li>
+<li><b>Sport &amp; Action</b> — movement as subject. Studio action, on-location, behind-the-scenes.</li>
+<li><b>Conceptual</b> — idea as subject. Sci-fi, fantasy, editorial concept.</li>
+</ul>
+<p>Each bucket page = the workflow for that kind of shoot + a prompt bank of paste-ready setups for the specific scenarios you'll actually be briefed on.</p>
+<blockquote><b>Same pattern, different slots.</b> A product shoot doesn't have a "pose" slot — it has an "angle" and a "backdrop" slot. A scene shoot has a "time of day" slot. The thinking pattern is identical; the columns of the shot table change. Every bucket page makes its column set explicit.</blockquote>
+<h2>Every entry shows the full chain — input → sheet → shoot</h2>
+<p>The bucket pages in this library (Model Shoots, Product Shoots) do not skip the upstream step. Every entry opens with a <b>Project start</b> block: the single input photo the client supplied, the character or product sheet built from it via <b>F-Sheet</b> / <b>F-PSheet</b>, and the shoot that comes after. That's how you read what's possible — start to finish, not mid-pipeline.</p>
+<p>If you haven't built a sheet yet, do the F-Sheet (or F-PSheet) lesson in Foundations first. Five minutes of setup buys you every shoot in this library, for every client you ever take on.</p>
+<h2>Now ship your own shoot — The Shoot Template</h2>
+<p>This page taught you to think in locked/variable. The next page hands you a blank version to fill in for any shoot you run — five blocks, a fillable shot table, a generate-and-track grid, and a final QC pass.</p>
+<p>Open <b>The Shoot Template</b> in this classroom. Treat it the way a chef treats a mise en place: don't generate until every block is full.</p>

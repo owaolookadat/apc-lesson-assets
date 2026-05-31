@@ -1,0 +1,75 @@
+<img alt="Foundations · Build a Product Sheet" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/heroes/fpsheet.jpg"/>
+<h2>F-PSheet — Build a Product Sheet from One Photo</h2>
+<h3>What you'll learn</h3>
+<p>How to take <b>one photo of a product</b> and produce a <b>multi-angle product sheet</b> that becomes the reference for every product shoot you ever do for that SKU.</p>
+<p>A character sheet locks identity for people. A product sheet locks identity for objects. Without one, every generation invents a slightly different watch, a slightly different bottle, a slightly different sneaker. With one, the same object appears across hero, lifestyle, tabletop, ad — with pixel-level consistency.</p>
+<h3>The result you're building (one input → this sheet)</h3>
+<img alt="Product sheet — five angles of the same watch" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/sheets/product-sheet-demo.jpg"/>
+<p>Five angles: three-quarter hero / dead-front / profile / top-down / detail macro. Same watch, same finish, same scale, same lighting.</p>
+<h3>The 5-angle product sheet</h3>
+<table>
+<tr><th>#</th><th>Angle</th><th>Why it's locked</th></tr>
+<tr><td>1</td><td><b>Three-quarter HERO</b></td><td>The marquee shot. The brand-recognition cue.</td></tr>
+<tr><td>2</td><td><b>Dead front</b></td><td>Flat, centered, dial / label / logo readable.</td></tr>
+<tr><td>3</td><td><b>Profile</b></td><td>Depth, edge geometry, thickness.</td></tr>
+<tr><td>4</td><td><b>Top-down</b></td><td>Flat-lay master.</td></tr>
+<tr><td>5</td><td><b>Detail macro</b></td><td>Tight crop on the most premium detail.</td></tr>
+</table>
+<h3>Recipe F.PSHEET.01 — 5-angle product sheet</h3>
+<p>JSON-structured for Nano Banana Pro. Attach the client's one product photo as the reference.</p>
+<pre><code>{
+  "image_type": "studio product reference sheet, single composite image",
+  "subject": "the product from the reference image — do not redescribe its surface, dial, or details",
+  "layout": "horizontal grid of 5 angles, equal spacing, clean bone-white seamless studio backdrop, identical scale across cells",
+  "angles_left_to_right": [
+    "THREE-QUARTER HERO view — the marquee angle, dial / face / logo prominently visible",
+    "DEAD-FRONT view, perfectly flat, centered",
+    "PROFILE / SIDE view, showing depth and edge geometry",
+    "TOP-DOWN flat-lay view from directly above",
+    "DETAIL MACRO — tight crop on the most premium detail"
+  ],
+  "surface": "the same clean bone-white seamless backdrop on every cell",
+  "lighting": "single soft top-key + subtle fill, identical across all 5 angles",
+  "camera_lens": "Phase One IQ4, 120mm macro f/8, tack sharp throughout",
+  "color_grade": "clean editorial, faithful tones, no LUT, premium product palette",
+  "same_product_across_all_angles": true,
+  "same_finish_across_all_angles": true,
+  "same_scale_across_all_angles": true,
+  "no_different_product_between_angles": true,
+  "no_color_shift_between_angles": true,
+  "no_surface_description": true,
+  "identity_lock_strength": "high",
+  "anti_drift_reinforcement": [
+    "every angle must show the SAME product — same finish, same dial, same proportions, same logo placement",
+    "every angle must use the SAME backdrop and the SAME lighting direction and quality",
+    "the sheet is a single coherent reference asset, not five separate generations"
+  ]
+}</code></pre>
+<blockquote><b>Why no surface description.</b> Same logic as F3 for faces. The instant you write "brushed steel case with leather strap," the model re-imagines the watch from your words and overrides the reference. Trust the reference. Spend words on the world (backdrop, lighting, angle) — never on the object itself.</blockquote>
+<h3>Workflow</h3>
+<ol>
+<li><b>Get the cleanest input.</b> Sharp iPhone snap on a clean surface is fine. Single product, in focus, tight crop.</li>
+<li><b>Open Higgsfield → Nano Banana Pro.</b> Attach the input. Aspect <b>16:9</b>, resolution <b>2k</b>, variants <b>2</b>.</li>
+<li><b>Paste Recipe F.PSHEET.01.</b> Usually no slots to fill — the recipe is complete.</li>
+<li><b>Generate.</b> Pick the cleaner variant. That's your sheet.</li>
+<li><b>Save it</b> named after the SKU. Reuse on every downstream product shoot.</li>
+</ol>
+<h3>How the product sheet powers everything downstream</h3>
+<table>
+<tr><th>Where it feeds in</th><th>What you build</th></tr>
+<tr><td>Frameworks → Product Shoots → Hero / Marquee</td><td>Premium launch image</td></tr>
+<tr><td>Frameworks → Product Shoots → Lifestyle</td><td>In-context campaign shot</td></tr>
+<tr><td>Frameworks → Product Shoots → Tabletop Still Life</td><td>Magazine still-life</td></tr>
+<tr><td>Frameworks → Creative Ads → Product Launch Ad</td><td>4:5 IG hero with copy overlay</td></tr>
+<tr><td>Model Shoots → UGC + product</td><td>Combine character + product sheet for creator-content ads</td></tr>
+</table>
+<h3>When this fails (troubleshooting)</h3>
+<table>
+<tr><th>Problem</th><th>Likely cause</th><th>Fix</th></tr>
+<tr><td>Different finish on each angle</td><td>Input photo low-quality</td><td>Use sharper input or run F5 edit-one-element per cell</td></tr>
+<tr><td>Logo / brand text drifts</td><td>Generators invent text</td><td>Add <code>preserve_logo_exactly_as_reference: true</code></td></tr>
+<tr><td>Scale wildly different between cells</td><td>Layout spec missed</td><td>Re-state "the product occupies the same proportion of each cell"</td></tr>
+<tr><td>Looks rendered, not photographed</td><td>Default product-CGI bias</td><td>Add <code>"photographed product, not 3D render"</code> + <code>"no CGI look"</code></td></tr>
+</table>
+<h3>Up next</h3>
+<p><b>Frameworks → Product Shoots</b> — uses your sheet as the input to hero / lifestyle / tabletop frameworks. Or jump straight to <b>Frameworks → Creative Ads</b> for the finished deliverable.</p>

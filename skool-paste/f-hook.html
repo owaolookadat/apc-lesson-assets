@@ -1,0 +1,88 @@
+<img alt="Foundations · Hooking IG Stills" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/heroes/fhook.jpg"/>
+<h2>F-Hook — Hooking IG Stills + Carousel Templates</h2>
+<h3>What you'll learn</h3>
+<p>How to take any still you generated in F1–F5 and turn it into a <b>hooking Instagram still</b> — the kind that stops scroll, doubles as a value-bomb, and works as paid-ad creative.</p>
+<p>This lesson is about the <i>layer on top</i> of the generation: composition for IG aspect ratios, text overlays, the 5-card carousel template that turns one hero shot into a saveable post.</p>
+<h3>The strategic stack</h3>
+<p>A hooking IG still does three jobs at once:</p>
+<ol>
+<li><b>Stops scroll.</b> A first frame the algorithm and the human both stop on.</li>
+<li><b>Promises value.</b> The image alone tells the viewer they'll learn something.</li>
+<li><b>Doubles as ad creative.</b> Same still, same overlay, runs as a paid exposure ad — no separate "ad version" needed.</li>
+</ol>
+<h3>The anatomy of a hook still</h3>
+<table>
+<tr><th>Ingredient</th><th>What it does</th><th>Where it lives</th></tr>
+<tr><td><b>Arresting subject</b></td><td>The "wait, what is this" beat</td><td>Center 60% of frame</td></tr>
+<tr><td><b>Visual hierarchy</b></td><td>The eye knows where to go in 0.3s</td><td>Composition + contrast</td></tr>
+<tr><td><b>Headline overlay</b></td><td>The promise / hook in 3–6 words</td><td>Top third, safe zone</td></tr>
+<tr><td><b>Proof overlay</b> (optional)</td><td>The credibility tag</td><td>Bottom third, smaller</td></tr>
+</table>
+<h3>The 3 IG aspect ratios — when each wins</h3>
+<table>
+<tr><th>Aspect</th><th>Use</th><th>Why</th></tr>
+<tr><td><b>1:1 square</b></td><td>Carousel cards, profile grid</td><td>Lowest cognitive load, every device renders perfectly</td></tr>
+<tr><td><b>4:5 portrait</b></td><td>Hero ads, feed-dominant posts</td><td>Largest legal feed size</td></tr>
+<tr><td><b>9:16 vertical</b></td><td>Reels, Stories, cross-promoted ads</td><td>Reels-native, captures mobile attention</td></tr>
+</table>
+<p>Always generate at 9:16. It's the easiest to crop down.</p>
+<h3>The 5-card carousel template</h3>
+<table>
+<tr><th>Card</th><th>Job</th><th>Pattern</th></tr>
+<tr><td><b>1 — Hook</b></td><td>Stop scroll + make a promise</td><td>Hero still + 3–6 word headline</td></tr>
+<tr><td><b>2 — Problem</b></td><td>Name the pain</td><td>Same-character still + tension copy</td></tr>
+<tr><td><b>3 — Reveal</b></td><td>Show the solution</td><td>A "wow" still — the deliverable</td></tr>
+<tr><td><b>4 — Method</b></td><td>Teach the move</td><td>A diagram, recipe card, side-by-side</td></tr>
+<tr><td><b>5 — CTA</b></td><td>Tell them what's next</td><td>Clean still + 1-line CTA</td></tr>
+</table>
+<p>Every card uses the <b>same character sheet</b>. Without F-Sheet, the carousel falls apart by card 3.</p>
+<h3>The headline-overlay rules</h3>
+<table>
+<tr><th>Pattern</th><th>Example</th><th>When</th></tr>
+<tr><td><b>Number + claim</b></td><td>"5 prompts that made me $400 yesterday"</td><td>Strong claim, scroll-stopping</td></tr>
+<tr><td><b>Question + tension</b></td><td>"Why does your AI face keep changing?"</td><td>Curiosity, known pain</td></tr>
+<tr><td><b>Bold reframe</b></td><td>"Stop fixing prompts. Fix the recipe."</td><td>Confrontational, signals expertise</td></tr>
+</table>
+<p>Headline lives in the <b>top third</b>. <b>3–6 words.</b> Bold weight 700+. High contrast. NO serif fonts.</p>
+<h3>Recipe F.HOOK.01 — the overlay block</h3>
+<pre><code>&lt;div style="position:absolute; top:6%; left:6%; right:6%;
+      font-family:'Inter', system-ui, sans-serif;
+      color:#c7ff36; font-weight:800; font-size:64px; line-height:1.05;
+      letter-spacing:-0.02em; text-shadow: 0 4px 24px rgba(0,0,0,0.6);"&gt;
+  Your 3–6 word headline
+&lt;/div&gt;
+&lt;div style="position:absolute; bottom:6%; left:6%; right:6%;
+      font-family:'Inter', system-ui, sans-serif;
+      color:#f5f1ea; font-weight:500; font-size:22px;
+      letter-spacing:0.02em; opacity:0.92;"&gt;
+  By [your handle] · [proof tag]
+&lt;/div&gt;</code></pre>
+<p>Drop over any 9:16 still. Lime headline + cream proof line. Tuned to survive IG's compression.</p>
+<h3>The workflow</h3>
+<ol>
+<li>Pick the hero still from your F-Sheet identity-locked shoots.</li>
+<li>Decide the headline pattern (number / question / reframe). 3–6 words.</li>
+<li>Compose the overlay in Figma, Photoshop, or HTML-to-image.</li>
+<li>Export at <b>1:1</b> (carousel), <b>4:5</b> (feed hero), <b>9:16</b> (Reel / Story).</li>
+<li>Build cards 2–5 following the carousel template. Same character sheet for continuity.</li>
+<li>Post the carousel + clip the hero into a Reel. Same hook headline on both.</li>
+</ol>
+<h3>What this unlocks</h3>
+<p>You now have the full IG flywheel:</p>
+<ul>
+<li><b>F1–F5</b> = how to generate stills that hold up.</li>
+<li><b>F-Sheet + F-PSheet</b> = how to lock identity so a series is possible.</li>
+<li><b>Frameworks</b> = how to build a coherent shoot.</li>
+<li><b>F-Hook</b> = how to repurpose the shoot as IG content + exposure ad creative.</li>
+</ul>
+<p>Free content drives signups → signups hit the curriculum → curriculum produces the next round of content. Closed loop.</p>
+<h3>When this fails</h3>
+<table>
+<tr><th>Problem</th><th>Likely cause</th><th>Fix</th></tr>
+<tr><td>Carousel reads as 5 random images</td><td>No identity lock</td><td>Use F-Sheet — every card needs the same sheet</td></tr>
+<tr><td>Headline disappears after IG upload</td><td>Font weight too light</td><td>Use 700+ and the text-shadow from F.HOOK.01</td></tr>
+<tr><td>Ad feels separate from organic post</td><td>You designed an ad-version</td><td>Don't — same hook, same overlay. The ad IS the post.</td></tr>
+<tr><td>Nobody saves the carousel</td><td>No usable artifact in cards 3–4</td><td>Add a recipe / diagram / framework screenshot as Card 4</td></tr>
+</table>
+<h3>Up next</h3>
+<p><b>Frameworks → Creative Ads</b> — three worked examples of the full pipeline: sheet → shoot → 5-card carousel + Reel + 4:5 hero, all from one input photo.</p>

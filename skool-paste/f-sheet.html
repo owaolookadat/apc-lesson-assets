@@ -1,0 +1,77 @@
+<img alt="Foundations · Build a Character Sheet" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/heroes/fsheet.jpg"/>
+<h2>F-Sheet — Build a Character Sheet from One Photo</h2>
+<h3>What you'll learn</h3>
+<p>How to take <b>one input photo</b> of a person and produce a <b>multi-view character sheet</b> that becomes their identity reference for every shoot you ever do for them. The single highest-leverage asset in the entire workflow: build it once, reuse it on every framework, every ad, every campaign.</p>
+<p>In F3 you learned to use a cropped face as a reference. This lesson teaches you to <i>build the sheet that face slots into</i>.</p>
+<h3>The result you're building (one input → this sheet)</h3>
+<img alt="Character sheet — five views of the same woman" src="https://raw.githubusercontent.com/owaolookadat/apc-lesson-assets/main/frameworks/sheets/char-sheet-demo.jpg"/>
+<p>Five views: front / three-quarter left / profile / three-quarter back / hero close-up. Same identity, same wardrobe, same lighting, same scale. One asset, infinite downstream shoots.</p>
+<h3>The 3-tier sheet</h3>
+<table>
+<tr><th>Tier</th><th>What it locks</th><th>Build effort</th></tr>
+<tr><td><b>5-view sheet</b></td><td>Face + body + proportions across angles</td><td>1 generation</td></tr>
+<tr><td><b>4-expression sheet</b></td><td>Neutral + smile + serious + talking</td><td>1 generation, optional</td></tr>
+<tr><td><b>4-wardrobe sheet</b></td><td>Multiple outfits for the same person</td><td>1 per wardrobe family</td></tr>
+</table>
+<p>The 5-view is non-negotiable. The other two are added when the brief demands them.</p>
+<h3>Recipe F.SHEET.01 — 5-view from one photo</h3>
+<p>JSON-structured for Nano Banana Pro. Attach the client's one input photo as the reference. Returns a single composite image with 5 views.</p>
+<pre><code>{
+  "image_type": "studio character reference sheet, single composite image",
+  "subject": "the person from the reference image — do not redescribe their face",
+  "layout": "horizontal grid of 5 views, equal spacing, clean bone-white seamless backdrop",
+  "views_left_to_right": [
+    "FRONT view, full body, arms relaxed at sides, neutral expression",
+    "THREE-QUARTER LEFT view, body angled 45 degrees to the left",
+    "PROFILE LEFT view, full side profile",
+    "THREE-QUARTER BACK view, looking back over the right shoulder",
+    "HERO CLOSE-UP head-and-shoulders portrait, eyes on camera, neutral"
+  ],
+  "wardrobe_lock": "&lt;SLOT — one outfit, identical across all 5 views&gt;",
+  "lighting": "single soft studio key from camera-left, gentle fill, identical across all 5 views",
+  "camera_lens": "Sony A7R V, 80mm f/2.8, sharp throughout, faithful skin tones",
+  "color_grade": "clean editorial, faithful tones, no LUT, no warmth bias",
+  "same_identity_across_all_views": true,
+  "same_wardrobe_across_all_views": true,
+  "same_lighting_across_all_views": true,
+  "same_scale_across_all_views": true,
+  "no_different_person_between_views": true,
+  "no_color_shift_between_views": true,
+  "no_facial_description": true,
+  "identity_lock_strength": "high",
+  "anti_drift_reinforcement": [
+    "every view must show the SAME person — same face, same body, same hair",
+    "every view must show the SAME outfit, identical wardrobe top to bottom",
+    "the sheet is a single coherent reference asset, not five separate generations"
+  ]
+}</code></pre>
+<blockquote><b>Why one composite, not five separate generations.</b> When you ask for 5 angles in one composite image, the model holds identity tighter than separate generations — it's locking them against each other inside the same render. Downside: composition is sometimes uneven. When that happens, fall back to 5 individual generations and tile them.</blockquote>
+<h3>Workflow (step by step)</h3>
+<ol>
+<li><b>Get your input.</b> Pick the single cleanest, most forward-facing photo. 512×512 minimum, in focus.</li>
+<li><b>Pick the wardrobe.</b> Decide ONE outfit. It appears on every view. Choose neutral (cream knit, black tee) so the sheet stays usable across many briefs.</li>
+<li><b>Open Higgsfield → Nano Banana Pro.</b> Attach the input photo. Aspect <b>16:9</b>, resolution <b>2k</b>, variants <b>2</b>.</li>
+<li><b>Paste Recipe F.SHEET.01.</b> Fill the <code>wardrobe_lock</code> slot.</li>
+<li><b>Generate.</b> Pick the cleaner of the two variants. That's your sheet.</li>
+<li><b>Save it</b> named after the identity (<code>anna-sheet.jpg</code>). Reuse it on every downstream shoot.</li>
+</ol>
+<h3>How the sheet powers everything downstream</h3>
+<table>
+<tr><th>Where the sheet feeds in</th><th>What you build</th></tr>
+<tr><td>Frameworks → Model Shoots → Editorial Portrait</td><td>A 6-shot brand portrait set</td></tr>
+<tr><td>Frameworks → Model Shoots → UGC</td><td>A 5-shot creator content set</td></tr>
+<tr><td>Frameworks → Model Shoots → Fashion Editorial</td><td>A 5-look magazine spread</td></tr>
+<tr><td>Frameworks → Creative Ads → Founder Carousel</td><td>A 5-card IG carousel ad</td></tr>
+<tr><td>F4 → Image to Video</td><td>Animated identity-locked clips</td></tr>
+</table>
+<p>One sheet. Infinite downstream shoots. That's the leverage.</p>
+<h3>When this fails (troubleshooting)</h3>
+<table>
+<tr><th>Problem</th><th>Likely cause</th><th>Fix</th></tr>
+<tr><td>Different person in some views</td><td>Input photo too small</td><td>Use at least 512×512 in-focus crop</td></tr>
+<tr><td>Wardrobe drifts between views</td><td>Slot too vague</td><td>Be specific — "cream chunky knit with ribbed cuffs," not "knit top"</td></tr>
+<tr><td>One view off-scale</td><td>Composite layout failed</td><td>Fall back to 5 individual generations and tile them</td></tr>
+<tr><td>Sheet looks averaged / generic</td><td>Multi-reference input</td><td>Use ONE clean reference, NOT a collage</td></tr>
+</table>
+<h3>Up next</h3>
+<p><b>F-PSheet — Build a Product Sheet from One Photo.</b> The same skill for objects: one product photo → 5-angle reference grid that locks the SKU across every campaign shot.</p>
