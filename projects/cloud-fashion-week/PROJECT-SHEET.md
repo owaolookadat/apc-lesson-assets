@@ -102,7 +102,7 @@
 | **B3** | 10–15s | Push-in toward her face. Starts at 3/4 body framing, ends at head-and-shoulders. Cloud chiaroscuro fully visible. Subtle gaze shift across the clip. | **The escalation.** Intimacy + presence. |
 | **B4** | 15–20s | Macro of EYES only — heterochromia hero. Left violet, right ice-blue. Slow blink mid-clip. Iris striations + freckles visible. Camera locked static. | **The peak / hook.** Polarizing identity. |
 | **B5** | 20–25s | Macro of cloud chiaroscuro — material hero. Cream highlights, blue-grey shadows, wispy edges. Subtle upward drift across the clip. | **The texture.** Material as art. |
-| **B6** | 25–30s | Continuous slow pull-back from medium to wide. Reveal full studio + model + cloud + cinema crew on both sides. **AI PRODUCTION CLUB** wordmark fades in over last 1.5s in pale-gold-on-cool-grey. | **The landing.** Scale + brand reveal. |
+| **B6** | 25–30s | Continuous pull-back reveals the fashion-week scene is playing on a LAPTOP SCREEN. Camera continues pulling back to reveal an AI-generated silhouette of JJ sitting at the laptop from behind, in a cozy real-creator workspace (plants, posters, soft warm lamp, slightly messy normal). The runway scene shrinks into the laptop screen as we see the desk + JJ silhouette + room context. **AI PRODUCTION CLUB** wordmark added by JJ in CapCut post-generation (NOT AI-generated). | **The twist landing.** Pays off the wedge — the whole impossibility was built by one person at a laptop. |
 
 **Beat count rationale:** 6 beats × 5 sec at 0.4× playback = 30 sec exact. Each beat has space to breathe. Opening drops the empty-runway slow-build in favor of immediate impossibility (per IG Reels scroll-stop research). Closing reverses with a continuous pull-back so the brand reveal feels like a scale reveal too.
 
@@ -119,7 +119,8 @@
 | **B3** | ⚪ TODO | 9:16 | F-Sheet + M-Sheet + E-multi (low-diagonal panel) | Dramatic push-in angle |
 | **B4** | ⚪ TODO | 9:16 (or 1:1 if better resolved at macro) | F-Sheet (eye-macro panel only) | Eye macro — no body, no venue needed |
 | **B5** | ⚪ TODO | 9:16 (or 1:1) | M-Sheet only | Cloud material macro — no face, no venue |
-| **B6** | ⚪ TODO | 9:16 | F-Sheet + M-Sheet + E-Sheet single wide | Wordmark added in post (CapCut/HyperFrames) |
+| **B6-fashion** | ⚪ TODO | 9:16 | F-Sheet + M-Sheet + E-Sheet single wide | The fashion-week pull-back (will be composited INTO the laptop screen in post). Wordmark NOT in this gen. |
+| **B6-desk** | ⚪ TODO | 9:16 | None — generate fresh in Higgsfield | AI-generated silhouette of a creator from behind, sitting at a laptop in a cozy real-creator workspace. Camera pulls back over the clip. NO model identity needed (just back of head + cozy room). |
 
 **Doctrinal rule (locked 2026-06-03):** match references to what's in frame. Eye macros don't need venue. Material macros don't need face. Wides need all three. Attaching irrelevant references muddies generation — only attach what the shot needs.
 
@@ -146,9 +147,10 @@ Two doctrinal rules:
 | **B1** | Model standing in cloud, subtle cloud morph | **Slow horizontal arc ~90°** around her, camera-left to camera-right, subject stays centered | 2s real → 5s playback |
 | **B2** | Model walking 2 slow steps | **Slow side-tracking dolly** moving parallel to her walking direction | 2s real → 5s playback |
 | **B3** | Subtle gaze shift, micro head-tilt | **Slow continuous push-in** from 3/4 body framing to head-and-shoulders | 2s real → 5s playback |
-| **B4** | One slow blink, eye color holds | **Locked static** — no camera motion | 2s real → 5s playback |
+| **B4** | **TOTALLY STILL** — no blink, no gaze shift, no head motion. Treat as a moving photograph. | **Locked static** — no camera motion | 2s real → 5s playback |
 | **B5** | Cloud morphs subtly | **Subtle slow upward drift** (~10% vertical translation over clip) | 2s real → 5s playback |
-| **B6** | Subject + cloud held; crew unchanged | **Continuous slow pull-back / dolly out** from medium to wide reveal | 2s real → 5s playback |
+| **B6-fashion** | Subject + cloud held; crew unchanged | **Continuous slow pull-back / dolly out** from medium to wide reveal | 2s real → 5s playback |
+| **B6-desk** | AI-gen creator silhouette at laptop, slight breathing micro-motion | **Continuous slow pull-back** from over-the-shoulder of the silhouette to wider room shot revealing workspace context | 2s real → 5s playback |
 
 ### Universal motion-prompt prefix (every video gen)
 
@@ -159,9 +161,27 @@ Two doctrinal rules:
 - **B1:** `"slow horizontal arc around the subject from camera-left to camera-right, approximately 90 degrees, subject stays centered in frame throughout"`
 - **B2:** `"slow side-tracking dolly moving parallel to the subject's walking direction, matching her pace"`
 - **B3:** `"slow continuous push-in toward the subject's face, starting at 3/4 body framing and ending at head-and-shoulders framing"`
-- **B4:** `"locked static — no camera motion at all"`
+- **B4:** `"locked static — no camera motion. Subject is TOTALLY STILL — no blink, no gaze shift, no head motion. Treat as a moving photograph. Only the natural micro-trembling of video capture gives away that this is footage, not a still."`
 - **B5:** `"subtle slow upward drift, approximately 10% vertical translation over the clip duration"`
-- **B6:** `"continuous slow pull-back / dolly out from medium framing to a full wide revealing the studio, the cinema crew on both sides, and the full cloud"`
+- **B6-fashion:** `"continuous slow pull-back / dolly out from medium framing to a full wide revealing the studio, the cinema crew on both sides, and the full cloud"`
+- **B6-desk:** `"continuous slow pull-back from an over-the-shoulder framing of a creator silhouette at a laptop, ending at a wider room shot revealing the cozy workspace context (plants, posters, warm lamp, slightly messy normal). The laptop screen is the visual center."`
+
+### Blink doctrine (LOCKED 2026-06-03)
+
+AI-generated faces in 5-sec clips need a blink or they read as uncanny waxwork. EXCEPT in slow-mo macro register where stillness IS the aesthetic.
+
+| Beat | Face size in frame | Blink? | Reason |
+|---|---|---|---|
+| **B1** | Body-distance, face visible | **YES — slow blink at sec 3** | Body framing + no blink = still photo with camera motion = creepy |
+| **B2** | Walking, face partly in/out of frame | Optional | Kinetic energy carries; blink optional |
+| **B3** | Push-in to head-and-shoulders | **YES — slow blink at sec 13** | Bridges thematically into B4 |
+| **B4** | **MACRO eyes only** | **NO BLINK** — totally still | Macro register exception. Eye colors are the entire point — blink risks them. Slow-mo + macro = contemplative stillness reads as power, not uncanny. |
+| **B5** | No face | N/A | No eyes in frame |
+| **B6-fashion** | Far wide, face tiny | N/A | Too small to read |
+| **B6-desk** | Silhouette only | N/A | No face visible |
+
+**Universal blink language for B1 + B3 video prompts:**
+> *"Single slow natural blink at approximately the [3 / 13]-second mark. Eyes close gently and reopen in slow-motion register, NOT a snap blink. Eyelids fully closed for ~0.3 sec, fully reopened by clip end. Heterochromia preserved through the blink — eye colors unchanged when eyes reopen."*
 
 ### Fallback plan for B1 orbit
 
@@ -223,7 +243,10 @@ B1's 90° arc is the highest-risk camera move for AI generation — maintaining 
 - [ ] **Camera-move variety** — no two consecutive beats use the same camera move (B1 arc → B2 lateral → B3 push-in → B4 static → B5 drift → B6 pull-back)
 - [ ] **B4 eye macro reads sharp** — heterochromia + freckles visible, iris striations resolved
 - [ ] **B5 cloud macro shows chiaroscuro** — texture detail readable, atmospheric depth obvious
-- [ ] **B6 wordmark legible** — "AI PRODUCTION CLUB" reads cleanly, no kerning issues
+- [ ] **B6 twist landing works** — pull-back reveals fashion-week scene is on a laptop, creator silhouette at desk visible, cozy workspace readable
+- [ ] **B6 laptop screen comp is clean** — fashion-week footage tracked onto the screen without visible seam
+- [ ] **B6 wordmark legible** — "AI PRODUCTION CLUB" added in CapCut overlay reads cleanly, no kerning issues
+- [ ] **Blink doctrine applied** — slow blinks present in B1 + B3; B4 totally still (no blink, no gaze, no head motion)
 - [ ] **30-second total runtime** — final cut lands at 29.5–30.5s
 - [ ] **Captions burned in** — sound-off feed playback works
 - [ ] **APC wordmark visible at landing card** — no real brand referenced anywhere
@@ -259,6 +282,10 @@ B1's 90° arc is the highest-risk camera move for AI generation — maintaining 
 7. **IG Reels openers must hook in 0.5s, not 5s** — TV-ad slow-build opens (empty runway → smoke emerges) lose IG viewers immediately. Front-load the impossibility / face / contrast in frame 1. Internal pacing can still be slow-mo / luxury, but the OPENING FRAME must carry the hook by itself.
 
 8. **Camera-move variety serves narrative** — repeated camera moves feel monotone. Per-beat variation (arc → lateral → push-in → static → drift → pull-back) keeps energy fresh without breaking the slow-mo register. Each move serves a purpose (orbit = 3D dimensionality, lateral = kinetic, push-in = intimacy, static = peak, drift = texture, pull-back = scale reveal).
+
+9. **Blink doctrine — exceptions to the no-blink-uncanny rule** — AI faces in 5-sec clips at normal framing need a blink to avoid waxwork tell. BUT in slow-mo macro register, totally-still eyes are MORE arresting and avoid AI eyelid-generation risk that could disturb the heterochromic colors. Rule of thumb: face-size in frame > 30% = blink; macro-only eyes = no blink. Slow-mo register gives permission for stillness that normal-time register doesn't.
+
+10. **Twist endings outperform reveal endings** — original B6 was "pull-back to wide + APC wordmark" (a brand-reveal landing). Updated B6 is "pull-back through laptop screen to reveal creator at desk" (a meta-twist landing). The twist version pays off the wedge ("studio shoots no studio could shoot") DIRECTLY — viewer SEES the impossibility was built by one person at a laptop. Self-evident proof beats stated claim. The COMPOSITE workflow (track fashion-week footage onto a laptop screen in CapCut/HyperFrames) is far more achievable than asking AI to generate the full nested reveal in one shot. Curriculum implication: any "AI-built" reveal can use this composite trick — generate the impossible content + film/AI the real-world container + comp them together.
 
 ---
 
