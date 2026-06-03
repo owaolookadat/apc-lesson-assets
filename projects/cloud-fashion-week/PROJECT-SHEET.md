@@ -166,6 +166,47 @@ Two doctrinal rules:
 - **B6-fashion:** `"continuous slow pull-back / dolly out from medium framing to a full wide revealing the studio, the cinema crew on both sides, and the full cloud"`
 - **B6-desk:** `"continuous slow pull-back from an over-the-shoulder framing of a creator silhouette at a laptop, ending at a wider room shot revealing the cozy workspace context (plants, posters, warm lamp, slightly messy normal). The laptop screen is the visual center."`
 
+### Cloud-movement doctrine (LOCKED 2026-06-03)
+
+Real cumulus clouds move slowly. AI defaults to dramatic morphing — fast tendrils, shape-shifting, fog-like billowing — which reads cartoony. We want SUBTLE micro-motion only.
+
+| Beat | Cloud movement spec | What's banned |
+|---|---|---|
+| **B1** | Subtle internal volumetric drift (lighter/darker pockets shifting). Wispy edges extend ~5cm over clip. Overall shape holds. | No dramatic morphing, no shape-change, no fast tendrils |
+| **B2** | Cloud trails her slightly as she walks — wisps displace backward like she's gently parting air. Body silhouette through cloud unchanged. | No cloud reshaping around walking motion, no fast trail |
+| **B3** | Cloud holds completely. Only the camera moves. Internal cloud texture has subtle micro-shimmer like real cumulus. | No shape change during push-in |
+| **B4** | N/A — no cloud in frame | — |
+| **B5** | Cloud macro: subtle interior drift, edges very slowly extending/retracting, light gradient holds steady. Alive but not BUSY. | No dramatic morph, no internal fog churning, no shape change |
+| **B6-fashion** | Cloud held while camera pulls back. Maybe single subtle morph as we exit. | No drama as we leave the scene |
+
+**Universal cloud-motion language (paste into every video prompt with cloud in frame):**
+
+> *"Cloud movement is SUBTLE and ATMOSPHERIC — slight internal drift, wispy edges extending and retracting by less than 5% of cloud volume across the full clip. The cloud HOLDS ITS OVERALL SHAPE — no dramatic morphing, no fast tendrils, no shape transformations. This is a real cumulus cloud at slow-mo speed, not animated fog."*
+
+### Hyperrealism doctrine for macros (LOCKED 2026-06-03)
+
+B4 (eye macro) and B5 (cloud macro) must hit luxury-ad macro register — the Cartier / Chanel / Dior / Tiffany quality bar. AI defaults to "decent close-up" but luxury macros are pin-sharp, every-pixel-resolved, medium-format aesthetic.
+
+**B4 eye macro hyperrealism checklist:**
+- Each individual eyelash sharply resolved
+- Iris radial striations crisp and detailed (not painted-looking)
+- Pore texture on surrounding eyelid + cheek skin visible
+- Single specular catchlight in each eye (positioned NATURALLY, not perfectly symmetric)
+- Slight "wet" quality on the eye surface (real eyes have a sclera meniscus)
+- Heterochromic color difference crystal clear, no muddy mid-tones
+- Freckles in frame edges sharply resolved
+
+**B5 cloud macro hyperrealism checklist:**
+- Individual cumulus wisps sharply resolved at their edges
+- Light gradient sharp transition from cream highlight to blue-grey shadow (not smooth fog wash)
+- Volumetric depth visible — you can see THROUGH wispy outer edges to slight blur behind
+- Internal cloud structure visible (pockets, density variations, not flat fluff)
+- No JPEG compression-style mush in the cumulus mass
+
+**Universal hyperrealism language (paste into B4 + B5 prompts):**
+
+> *"Hyperrealistic luxury-ad macro register. Phase One IQ4 medium-format aesthetic. Pin-sharp focus on subject surface — every micro-texture sharply resolved. Single dramatic key light creating specular highlights. The reference quality bar is Cartier / Chanel / Dior / Tiffany macro advertisements. NO soft AI haze. NO compression mush. NO flattened mid-tones. Each surface detail must be individually resolved."*
+
 ### Blink doctrine (LOCKED 2026-06-03)
 
 AI-generated faces in 5-sec clips need a blink or they read as uncanny waxwork. EXCEPT in slow-mo macro register where stillness IS the aesthetic.
