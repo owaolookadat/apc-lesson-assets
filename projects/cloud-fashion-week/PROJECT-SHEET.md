@@ -1,16 +1,18 @@
 # PROJECT SHEET — F.S.02 · Cloud Fashion Week
 
-**Status:** Pre-production — sheets locked (F + E + E-multi + M), ready for beat-still generation
+**Status:** Pre-production — sheets locked (F + E + E-multi + M), storyboard + motion brief locked, ready for beat-still generation
 **Date locked:** 2026-06-03
 **Format:** IG Reel · 30 sec · vertical 9:16
 **Wedge category:** Material/physics impossibility (atmospheric phenomenon as garment)
-**Pivot history:** Smoke Fashion Week (abandoned 2026-06-03) → Cloud Fashion Week (current). Pivot reason: smoke read as curling/dissolving tendrils, hard to keep coherent across beats; cloud reads as solid atmospheric volume with chiaroscuro, easier to lock and visually more arresting.
+**Pivot history:**
+- Smoke Fashion Week → abandoned 2026-06-03 (smoke too tendril-y, hard to lock coherence across beats)
+- Cloud Fashion Week opening originally planned as slow build (empty runway → smoke emerges → walks forward) → restructured 2026-06-03 to **Option B + D combo:** drop empty-runway opener, open directly on the full impossibility (model already in cloud, mid-runway). Reason: IG Reels viewers scroll-stop in 0.5s; empty-runway openers lose them. Front-load the hook.
 
 ---
 
 ## BLOCK 1 — Concept + brief
 
-> A 30-second slow-motion IG Reel set in a film production studio. An albino female model with heterochromia (left eye violet, right eye ice-blue) walks down a polished black runway flanked by cinema crew + cameras. She is standing INSIDE a huge wide floaty cumulus cloud — head and shoulders protruding above, thighs and legs below, the cloud the dominant visual mass. The cloud morphs subtly across the reel (slow-mo masks AI motion tells). A single dry VO line at the brand reveal. The impossibility: she's not wearing a cloud-shaped dress — she's wearing an actual cumulus cloud. Audience: avant-garde fashion houses, perfume brands, art / design IG, creative directors. The visual carries the reel; VO arrives only at the landing card.
+> A 30-second slow-motion IG Reel set in a film production studio. An albino female model with heterochromia (left eye violet, right eye ice-blue) and freckles stands inside a huge wide floaty cumulus cloud — head + shoulders protruding above, thighs + legs below. The cloud is the dominant visual mass with full chiaroscuro (cream highlights, blue-grey shadows). The studio runway is flanked by cinema cameras + crew (no audience). The reel opens on the impossibility directly (no slow build), then deepens through walk → push-in → eye macro → cloud macro → wide pull-back with brand reveal. Single dry VO line at the landing card. Audience: avant-garde fashion houses, perfume brands, art / design IG, creative directors.
 
 ---
 
@@ -18,7 +20,7 @@
 
 | Field | Value |
 |---|---|
-| **Hook (first 2 sec)** | Empty studio runway, dramatic spotlight at far end, theatrical haze — promise of an arrival |
+| **Hook (first 2 sec)** | Model in wide floaty cloud, mid-runway, slow camera orbit — the impossibility is the first thing visible. Heterochromic eyes catch the light. |
 | **Caption** | "A fashion show no fire marshal would permit. No fabric mill. No location scout. Built in an afternoon. AI Production Club Track C — shoots that wouldn't happen anywhere else. Comment 'CLOUD' for the recipe." |
 | **Hashtags** | #fashionweek #aiproduction #aivideo #aiproductionclub #couture #avantgardefashion #conceptualart #albino #albinismbeauty #editorial |
 | **CTA** | Comment "CLOUD" → DM funnel triggers Track C curriculum link |
@@ -33,13 +35,13 @@
 
 | Sheet | Reference image | Used in shots |
 |---|---|---|
-| **F-Sheet (model)** | [f-sheet-model.png](sheets/f-sheet-model.png) — 5 panels: eye macro (heterochromia), front face, 3/4 face, full body w/ wide cloud, profile | B1-end, B2, B3, B4, B6 |
+| **F-Sheet (model)** | [f-sheet-model.png](sheets/f-sheet-model.png) — 5 panels: eye macro (heterochromia), front face, 3/4 face, full body w/ wide cloud, profile | B1, B2, B3, B4, B6 |
 
 **F-Sheet character spec:**
 - Female fashion model with albinism
 - Pale milky-white skin, platinum-white long hair
 - Heterochromia: LEFT eye pale violet/lavender, RIGHT eye ice blue (canonical identity hook)
-- Freckles scattered on nose bridge and upper cheekbones (preserved from anchor)
+- Freckles scattered on nose bridge and upper cheekbones
 - Refined features: high cheekbones, full lips, strong jawline
 - Editorial register — Connie Chiu / Shaun Ross / Diandra Forrest casting tier
 - Calm confident expression, eyes forward to camera
@@ -48,8 +50,8 @@
 
 | Sheet | Reference image | Used in shots |
 |---|---|---|
-| **E-Sheet single wide** | [e-sheet-venue.png](sheets/e-sheet-venue.png) — single wide of studio runway from front | B1-start, B1-end, B6 (anytime canonical wide is needed) |
-| **E-Sheet multi-angle** | [e-sheet-venue-multi-angle.png](sheets/e-sheet-venue-multi-angle.png) — 4 panels: wide front, wide back, low-angle x2 | B2, B3 (when alternate camera angles are needed) |
+| **E-Sheet single wide** | [e-sheet-venue.png](sheets/e-sheet-venue.png) — single wide of studio runway from front | B6 (final wide pull-back) |
+| **E-Sheet multi-angle** | [e-sheet-venue-multi-angle.png](sheets/e-sheet-venue-multi-angle.png) — 4 panels: wide front, wide back, low-angle x2 | B1, B2, B3 (when alternate camera angles needed) |
 
 **E-Sheet venue spec:**
 - Film production studio (NOT a fashion-week venue with audience)
@@ -59,14 +61,14 @@
 - Lighting grid overhead with mounted softboxes
 - Softbox panels, fill panels, gaffer-taped cable runs on floor
 - Dark studio walls, slight atmospheric haze
-- Single dramatic spotlight cone at back of runway (stage destination)
+- Dramatic spotlight cone at back of runway (lighting destination)
 - **NO audience seating. NO model walking in seating areas.** Only technical crew operating equipment.
 
 ### Material sheet
 
 | Sheet | Reference image | Used in shots |
 |---|---|---|
-| **M-Sheet (cloud)** | [m-sheet-cloud.png](sheets/m-sheet-cloud.png) — model standing inside huge wide cumulus, head + shoulders above, legs below | B1-end, B2, B3, B6 |
+| **M-Sheet (cloud)** | [m-sheet-cloud.png](sheets/m-sheet-cloud.png) — model standing inside huge wide cumulus, head + shoulders above, legs below | B1, B2, B3, B5, B6 |
 
 **M-Sheet cloud spec — chiaroscuro is the defining feature:**
 - WIDE floaty cumulus volume (NOT a tube-top wrap)
@@ -91,16 +93,18 @@
 
 ## BLOCK 4 — Storyboard (6 beats · 30 sec total · slow-mo doctrine)
 
+**Opening principle (LOCKED 2026-06-03):** Front-load the impossibility. No anticipation through emptiness. Frame 1 shows the model in the cloud, in the studio, with heterochromia visible. The viewer's scroll stops because of WHAT they see, not because of buildup toward something.
+
 | Beat | Time | Frame | Role |
 |---|---|---|---|
-| **B1-start** | 0–5s | Empty polished black runway. Cinema crew + cameras flanking both sides. Lighting grid overhead. Single dramatic spotlight cone at far end of runway. Theatrical haze. NO model in frame. | **The setup.** Promise of arrival. |
-| **B1-end** | 5–10s | Model now visible at far end of runway under the spotlight. She is standing inside the wide floaty cloud. Cloud morphs subtly in slow-mo. Camera locked at front of runway. | **The reveal.** Subject arrives. |
-| **B2** | 10–15s | Side-angle / low-diagonal of model walking mid-runway. Full body visible in cloud. Subtle hair drift in slow-mo. Cinema cameras visible in deep background on opposite side of runway. | **The walk.** Subject in motion. |
-| **B3** | 15–20s | Push-in hero shot — 3/4 close-up of model. Cloud chiaroscuro fully visible (cream top, blue-grey shadow). Subtle gaze shift across the clip. | **The escalation.** Subject closer, weight of presence. |
-| **B4** | 20–25s | Macro of EYES only — heterochromia hero shot. Left violet, right ice-blue. Slow blink across the clip. Iris striations + freckles visible. | **The peak / hook.** The polarizing identity moment. |
-| **B6** | 25–30s | Continuous slow pull-back to wide. Reveal full studio + model + cloud + cinema crew. **AI PRODUCTION CLUB** wordmark fades in over last 1.5s in pale-gold-on-cool-grey. | **The landing.** Brand reveal. |
+| **B1** | 0–5s | Model standing mid-runway INSIDE the huge wide floaty cloud. Head + shoulders + face visible above; thighs + legs visible below. Cinema crew + cameras in soft focus on flanks. Spotlight haze. Heterochromic eyes catch the light. Cloud morphs subtly in slow-mo. | **The hook.** Impossibility first. |
+| **B2** | 5–10s | Model walking forward slowly. Side-tracking camera moves parallel to her. Cloud trails subtly. Cinema cameras visible deeper in background on opposite side. | **The walk.** Subject in motion. |
+| **B3** | 10–15s | Push-in toward her face. Starts at 3/4 body framing, ends at head-and-shoulders. Cloud chiaroscuro fully visible. Subtle gaze shift across the clip. | **The escalation.** Intimacy + presence. |
+| **B4** | 15–20s | Macro of EYES only — heterochromia hero. Left violet, right ice-blue. Slow blink mid-clip. Iris striations + freckles visible. Camera locked static. | **The peak / hook.** Polarizing identity. |
+| **B5** | 20–25s | Macro of cloud chiaroscuro — material hero. Cream highlights, blue-grey shadows, wispy edges. Subtle upward drift across the clip. | **The texture.** Material as art. |
+| **B6** | 25–30s | Continuous slow pull-back from medium to wide. Reveal full studio + model + cloud + cinema crew on both sides. **AI PRODUCTION CLUB** wordmark fades in over last 1.5s in pale-gold-on-cool-grey. | **The landing.** Scale + brand reveal. |
 
-**Beat count rationale:** dropped the original B5 (cloud macro / dress proof shot) — chiaroscuro carries through B1-end + B2 + B3 naturally. Eye macro (B4) is the polarizing peak; cloud carries through wides; landing card resolves.
+**Beat count rationale:** 6 beats × 5 sec at 0.4× playback = 30 sec exact. Each beat has space to breathe. Opening drops the empty-runway slow-build in favor of immediate impossibility (per IG Reels scroll-stop research). Closing reverses with a continuous pull-back so the brand reveal feels like a scale reveal too.
 
 ---
 
@@ -110,11 +114,11 @@
 
 | Shot | Status | Aspect | Refs to attach | Notes |
 |---|---|---|---|---|
-| **B1-start** | ⚪ TODO | 9:16 | E-Sheet single wide | Venue only — no model, no cloud yet |
-| **B1-end** | ⚪ TODO | 9:16 | F-Sheet + M-Sheet + E-Sheet single wide | Full sheet set — identity + material + venue |
-| **B2** | ⚪ TODO | 9:16 | F-Sheet + M-Sheet + E-multi (side/low-diagonal panel) | Alt camera angle from E-multi |
+| **B1** | ⚪ TODO | 9:16 | F-Sheet + M-Sheet + E-multi (wide front panel) | All three locked elements. Opening hero shot. |
+| **B2** | ⚪ TODO | 9:16 | F-Sheet + M-Sheet + E-multi (side panel) | Side angle for tracking shot |
 | **B3** | ⚪ TODO | 9:16 | F-Sheet + M-Sheet + E-multi (low-diagonal panel) | Dramatic push-in angle |
-| **B4** | ⚪ TODO | 9:16 (or 1:1 if better resolved at macro scale) | F-Sheet (eye-macro panel only) | Eye macro — no body, no venue needed |
+| **B4** | ⚪ TODO | 9:16 (or 1:1 if better resolved at macro) | F-Sheet (eye-macro panel only) | Eye macro — no body, no venue needed |
+| **B5** | ⚪ TODO | 9:16 (or 1:1) | M-Sheet only | Cloud material macro — no face, no venue |
 | **B6** | ⚪ TODO | 9:16 | F-Sheet + M-Sheet + E-Sheet single wide | Wordmark added in post (CapCut/HyperFrames) |
 
 **Doctrinal rule (locked 2026-06-03):** match references to what's in frame. Eye macros don't need venue. Material macros don't need face. Wides need all three. Attaching irrelevant references muddies generation — only attach what the shot needs.
@@ -123,25 +127,45 @@
 
 ---
 
-## BLOCK 6 — Motion brief · slow-mo doctrine (LOCKED 2026-06-03)
+## BLOCK 6 — Motion brief · slow-mo + camera-move doctrine (LOCKED 2026-06-03)
+
+### Slow-mo doctrine
 
 **The whole reel is slow-motion.** Every video clip generates with explicit slow-mo capture spec (120fps shot → 0.4× playback). Two reasons:
 1. **Luxury register** — slow-mo is the canonical signal for premium fashion advertising (Chanel/Dior/Gucci hero campaigns)
 2. **AI tell concealment** — at normal speed, AI-generated cloud morphing reads cartoony; slow-mo lets the cloud only morph SUBTLY, hiding the worst AI motion tells
 
-**Universal motion prompt prefix for every video gen:**
-> *"Shot in slow motion (120fps capture, 0.4× playback). All motion is SLOW and atmospheric — slight cloud morphing, gentle hair drift, slow walking, slow camera moves. NO fast morphing, NO rapid cloud changes, NO snap movements."*
+### Camera-move arc — variety serves the narrative
 
-| Shot | Camera move | Subject action | Real duration → playback duration |
+Two doctrinal rules:
+- **Rule 1:** No two consecutive beats use the same camera move. Variety prevents monotony.
+- **Rule 2:** Camera move SPEED is constant across all beats. Every move is slow (1× max). No whip-pans, no snap-zooms, no quick cuts. ONE pacing register from start to finish.
+
+| Beat | Subject motion | Camera move | Real → playback |
 |---|---|---|---|
-| **B1-start** | Locked static or slight slow push-in | Cloud-less venue, no subject. Haze drifts subtly. | 2s real → 5s playback |
-| **B1-end** | Locked static | Model already in spotlight at far end, cloud morphs subtly | 2s real → 5s playback |
-| **B2** | Slow side-tracking with subject | Model walking 2 steps in slow-mo, cloud trails slightly | 2s real → 5s playback |
-| **B3** | Slow push-in over full clip | Subtle gaze shift, micro head-tilt | 2s real → 5s playback |
-| **B4** | Locked macro static | One slow blink, eye color holds | 2s real → 5s playback |
-| **B6** | Continuous slow pull-back | Wide reveal of studio + model + crew + cloud. Wordmark fades over last 1.5s. | 2s real → 5s playback |
+| **B1** | Model standing in cloud, subtle cloud morph | **Slow horizontal arc ~90°** around her, camera-left to camera-right, subject stays centered | 2s real → 5s playback |
+| **B2** | Model walking 2 slow steps | **Slow side-tracking dolly** moving parallel to her walking direction | 2s real → 5s playback |
+| **B3** | Subtle gaze shift, micro head-tilt | **Slow continuous push-in** from 3/4 body framing to head-and-shoulders | 2s real → 5s playback |
+| **B4** | One slow blink, eye color holds | **Locked static** — no camera motion | 2s real → 5s playback |
+| **B5** | Cloud morphs subtly | **Subtle slow upward drift** (~10% vertical translation over clip) | 2s real → 5s playback |
+| **B6** | Subject + cloud held; crew unchanged | **Continuous slow pull-back / dolly out** from medium to wide reveal | 2s real → 5s playback |
 
-**Critical:** every Kling/Veo prompt MUST include the slow-mo prefix. Without it, the model defaults to normal-speed motion → AI tells reappear.
+### Universal motion-prompt prefix (every video gen)
+
+> *"Shot in slow motion (120fps capture, 0.4× playback). All motion is SLOW and atmospheric — slight cloud morphing, gentle hair drift, slow walking, slow camera moves. NO fast morphing, NO rapid cloud changes, NO snap movements. Camera move: [SPECIFIC MOVE FROM TABLE ABOVE]. Move executes smoothly over the full 5-second clip duration."*
+
+### Per-beat motion prompt snippets (paste-ready)
+
+- **B1:** `"slow horizontal arc around the subject from camera-left to camera-right, approximately 90 degrees, subject stays centered in frame throughout"`
+- **B2:** `"slow side-tracking dolly moving parallel to the subject's walking direction, matching her pace"`
+- **B3:** `"slow continuous push-in toward the subject's face, starting at 3/4 body framing and ending at head-and-shoulders framing"`
+- **B4:** `"locked static — no camera motion at all"`
+- **B5:** `"subtle slow upward drift, approximately 10% vertical translation over the clip duration"`
+- **B6:** `"continuous slow pull-back / dolly out from medium framing to a full wide revealing the studio, the cinema crew on both sides, and the full cloud"`
+
+### Fallback plan for B1 orbit
+
+B1's 90° arc is the highest-risk camera move for AI generation — maintaining model identity + cloud shape through an orbit is hard. **If B1 comes out unstable after 2 generation attempts, fall back to slow push-in** (camera moves toward her instead of around). Push-in is easier to generate cleanly and still front-loads energy.
 
 ---
 
@@ -153,7 +177,7 @@
 >
 > [silent — music sustains + faint shutter at sec 8]
 >
-> [silent — music sustains + audience-less crew ambience]
+> [silent — music sustains + crew ambience]
 >
 > [silent — music swells half-step]
 >
@@ -177,25 +201,28 @@
 
 | Beat | SFX |
 |---|---|
-| **B1-start** | Soft cinematic whoosh as spotlight reaches full intensity · distant studio ambient hum |
-| **B1-end** | Faint runway-arrival cue · single soft shutter click at sec 8 |
-| **B2** | Slow footsteps on polished runway (slow-mo register — reverbed) · subtle crew ambient |
-| **B3** | Music swells half-step · sustained shutter click at sec 18 |
+| **B1** | Soft atmospheric whoosh + faint studio ambient hum + subtle crew background (no clear voices) |
+| **B2** | Slow footsteps on polished runway (slow-mo register — reverbed, elongated) · subtle crew ambient |
+| **B3** | Music swells half-step · sustained single shutter click at sec 13 |
 | **B4** | Music holds intimate register · faint breath-pause SFX layered under blink |
+| **B5** | Music sustains · subtle wind / atmospheric texture under cloud |
 | **B6** | Music holds final chord during pull-back · 1.5s silence · music returns as one chord under VO + wordmark |
 
 ---
 
 ## BLOCK 8 — QC checklist (pre-publish gate)
 
-- [ ] **Identity locked** — same model face across B1-end, B2, B3, B4, B6 (no drift in features, hair color, freckle pattern)
+- [ ] **B1 hooks in first 0.5s** — viewer can SEE the impossibility (cloud + body + studio + eyes) in frame 1, no buildup required
+- [ ] **Identity locked** — same model face across B1, B2, B3, B4, B6 (no drift in features, hair color, freckle pattern)
 - [ ] **Heterochromia preserved** — left violet / right ice-blue visible wherever eyes are in frame
 - [ ] **Cloud chiaroscuro** — cream highlights + blue-grey shadow gradient visible in every shot with cloud (NOT uniformly white)
-- [ ] **Cloud WIDE proportions** — extends visibly beyond shoulders in B1-end / B2 / B3 / B6 (NOT tube-top compressed)
-- [ ] **Venue consistency** — same studio, same crew count, same lighting grid, same color register across B1-start / B1-end / B2 / B3 / B6
+- [ ] **Cloud WIDE proportions** — extends visibly beyond shoulders in B1 / B2 / B3 / B6 (NOT tube-top compressed)
+- [ ] **Venue consistency** — same studio, same crew count, same lighting grid, same color register across B1 / B2 / B3 / B6
 - [ ] **No audience** — only technical crew visible at any point. No seated audience in any beat.
 - [ ] **Slow-mo throughout** — every video clip plays at slow-mo register. No normal-speed motion anywhere.
+- [ ] **Camera-move variety** — no two consecutive beats use the same camera move (B1 arc → B2 lateral → B3 push-in → B4 static → B5 drift → B6 pull-back)
 - [ ] **B4 eye macro reads sharp** — heterochromia + freckles visible, iris striations resolved
+- [ ] **B5 cloud macro shows chiaroscuro** — texture detail readable, atmospheric depth obvious
 - [ ] **B6 wordmark legible** — "AI PRODUCTION CLUB" reads cleanly, no kerning issues
 - [ ] **30-second total runtime** — final cut lands at 29.5–30.5s
 - [ ] **Captions burned in** — sound-off feed playback works
@@ -229,6 +256,10 @@
 
 6. **Reference per shot, not global** — attaching irrelevant references muddies generation. Eye macros need only F-Sheet. Material macros need only M-Sheet. Wides need all three. This is now Track C C4 doctrine.
 
+7. **IG Reels openers must hook in 0.5s, not 5s** — TV-ad slow-build opens (empty runway → smoke emerges) lose IG viewers immediately. Front-load the impossibility / face / contrast in frame 1. Internal pacing can still be slow-mo / luxury, but the OPENING FRAME must carry the hook by itself.
+
+8. **Camera-move variety serves narrative** — repeated camera moves feel monotone. Per-beat variation (arc → lateral → push-in → static → drift → pull-back) keeps energy fresh without breaking the slow-mo register. Each move serves a purpose (orbit = 3D dimensionality, lateral = kinetic, push-in = intimacy, static = peak, drift = texture, pull-back = scale reveal).
+
 ---
 
-— F.S.02 · Cloud Fashion Week · Project Sheet · AI Production Club Track C · LOCKED 2026-06-03
+— F.S.02 · Cloud Fashion Week · Project Sheet · UPDATED 2026-06-03 (Option B + D opening restructure + camera-move arc)
