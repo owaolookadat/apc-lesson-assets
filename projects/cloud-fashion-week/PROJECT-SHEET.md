@@ -50,19 +50,18 @@
 
 | Sheet | Reference image | Used in shots |
 |---|---|---|
-| **E-Sheet single wide** | [e-sheet-venue.png](sheets/e-sheet-venue.png) — single wide of studio runway from front | B6 (final wide pull-back) |
-| **E-Sheet multi-angle** | [e-sheet-venue-multi-angle.png](sheets/e-sheet-venue-multi-angle.png) — 4 panels: wide front, wide back, low-angle x2 | B1, B2, B3 (when alternate camera angles needed) |
+| **E-Sheet multi-angle (v2 equipment-only)** | [e-sheet-venue-multi-angle.png](sheets/e-sheet-venue-multi-angle.png) — 4 panels: wide front, end of runway looking back, side angle 90°, low diagonal | B1, B2, B3, B6-fashion (all shots — single source of truth for venue) |
 
-**E-Sheet venue spec:**
-- Film production studio (NOT a fashion-week venue with audience)
+**E-Sheet venue spec (UPDATED 2026-06-03 — equipment-only, no humans):**
+- Film production studio (NOT a fashion-week venue, NOT with audience, NOT with crew)
 - Polished black runway extending forward into frame
-- Cinema cameras (RED/ARRI-style) on tripods flanking both sides
-- DP-style crew operators in dark technical clothing
+- Cinema cameras (RED/ARRI-style) on tripods flanking both sides — UNATTENDED (no operators, no DPs, no humans)
 - Lighting grid overhead with mounted softboxes
 - Softbox panels, fill panels, gaffer-taped cable runs on floor
 - Dark studio walls, slight atmospheric haze
 - Dramatic spotlight cone at back of runway (lighting destination)
-- **NO audience seating. NO model walking in seating areas.** Only technical crew operating equipment.
+- **NO audience seating. NO crew. NO operators. NO humans of any kind.** Equipment-only register — the studio is set up and ready, the model is the ONLY human in the scene.
+- Doctrine reason: AI video morphing risk on human secondaries; equipment doesn't morph. Bonus: model pops harder against equipment-only context.
 
 ### Material sheet
 
@@ -119,7 +118,7 @@
 | **B3** | ⚪ TODO | 9:16 | F-Sheet + M-Sheet + E-multi (low-diagonal panel) | Dramatic push-in angle |
 | **B4** | ⚪ TODO | 9:16 (or 1:1 if better resolved at macro) | F-Sheet (eye-macro panel only) | Eye macro — no body, no venue needed |
 | **B5** | ⚪ TODO | 9:16 (or 1:1) | M-Sheet only | Cloud material macro — no face, no venue |
-| **B6-fashion** | ⚪ TODO | 9:16 | F-Sheet + M-Sheet + E-Sheet single wide | The fashion-week pull-back (will be composited INTO the laptop screen in post). Wordmark NOT in this gen. |
+| **B6-fashion** | ⚪ TODO | 9:16 | F-Sheet + M-Sheet + E-Sheet multi-angle (wide-front panel) | The fashion-week pull-back (will be composited INTO the laptop screen in post). Wordmark NOT in this gen. |
 | **B6-desk** | ⚪ TODO | 9:16 | None — generate fresh in Higgsfield | AI-generated silhouette of a creator from behind, sitting at a laptop in a cozy real-creator workspace. Camera pulls back over the clip. NO model identity needed (just back of head + cozy room). |
 
 **Doctrinal rule (locked 2026-06-03):** match references to what's in frame. Eye macros don't need venue. Material macros don't need face. Wides need all three. Attaching irrelevant references muddies generation — only attach what the shot needs.
