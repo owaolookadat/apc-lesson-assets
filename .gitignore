@@ -1,0 +1,15 @@
+# Google Drive sync artifacts
+.tmp.driveupload/
+.tmp.drivedownload/
+
+# Working / iteration files
+_v*-*
+_temp-*
+_candidate-*
+_silent-*
+_trim-*
+_concat-*
+
+# OS junk
+.DS_Store
+Thumbs.db
