@@ -14,6 +14,7 @@
 | [PROJECT-SHEET-GUIDED.md](PROJECT-SHEET-GUIDED.md) | Blank Project Sheet template with fill-in-the-blanks | **Start here.** Plan YOUR reel before generating anything. |
 | [PROMPTS-LIBRARY.md](PROMPTS-LIBRARY.md) | Every prompt we used (sheets, stills, videos, VO) | Copy-paste and adapt for your concept |
 | [DOCTRINES.md](DOCTRINES.md) | 13 lessons we learned during this build | Read before you start. Save yourself the iterations we burned. |
+| [SHOT-IMAGINATOR.md](SHOT-IMAGINATOR.md) | 10-field prompt scaffold for ANY shot | When you need to write a new prompt and don't know where to start |
 | [../PROJECT-SHEET.md](../PROJECT-SHEET.md) | Our WORKED example — Cloud Fashion Week's filled Project Sheet | Reference when you're stuck on what to write in each block |
 | [../sheets/](../sheets/) | Our actual F/E/M sheets used | Visual reference for what "good" looks like |
 | [../stills/](../stills/) | Our actual beat stills (and iteration history) | See how the build evolved |
