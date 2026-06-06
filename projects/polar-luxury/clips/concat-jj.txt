@@ -1,5 +1,0 @@
-file 'c1-setup-6s.mp4'
-file 'c2-scarf-6s.mp4'
-file 'c3-cuff-6s.mp4'
-file 'c4-sunglasses-6s.mp4'
-file 'c5-landing-6s.mp4'
