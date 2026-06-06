@@ -1,309 +1,301 @@
-# Notion Project Tracker — Build Guide
+# Notion Case Study Template — Build Guide
 
-> Step-by-step instructions to build a Notion dashboard that tracks any AI video reel from concept to ship.
->
-> **Why a Notion tracker (vs the markdown Project Sheet):**
-> The markdown Project Sheet is a STATIC planning doc.
-> The Notion tracker is a LIVING DASHBOARD that shows progress, embeds media, and ties together every artifact across the build.
->
-> Use both — markdown sheet for planning, Notion for executing + sharing the build journey publicly.
+> Simple Notion template that works for EVERY reel you'll ever make.
+> Same 5 stages. Plug in your specifics. Ship as a public case study.
 
 ---
 
-## What you'll build
+## The pattern
 
-A Notion page with:
-- 📊 Project hero (concept name, status, dates, final reel embed)
-- 📋 Concept brief + distribution plan
-- 📐 **Sheets Tracker database** (kanban view of F-Sheet, E-Sheet, M-Sheet)
-- 🎥 **Beat Tracker database** (table view of B1-B6 with embedded stills + clips)
-- 📝 Decision log (timeline of choices)
-- 🔁 Iteration history (what was tried, what failed, what worked)
-- 💡 Lessons learned (doctrines discovered during build)
-- ✅ QC checklist (pre-publish gate)
-- 🚀 Distribution log (where posted, engagement metrics)
+Every AI video reel follows the same 5 stages:
 
-When done, this is a SINGLE PAGE that shows the entire build journey. You can share it as a public duplicate link — your case-study marketing asset.
+```
+1. IDEATION       →  Concept + sheets + storyboard
+2. STILL GEN      →  Beat stills (using sheets as references)
+3. VIDEO GEN      →  Image-to-video (slow-mo + camera moves)
+4. SOUND GEN      →  VO + music + SFX
+5. EDITING        →  CapCut stitch + grade + ship
+```
+
+That's the entire process. Cloud Fashion Week. Polar Luxury. Your next reel. Same 5 stages every time.
+
+So the Notion template is structured as a **case study**:
+
+```
+Here's a [project type] shoot I made.
+This is how I did it.
+[Process: 5 stages]
+Results.
+```
+
+Duplicate the template for every new reel. Plug in specifics. Ship as your public case study.
 
 ---
 
-## Estimated time
+## The template structure
 
-- First build: ~45 minutes (read this, build the structure)
-- Per project after that: ~10 minutes (duplicate the template, fill in your data)
+When done, your Notion page reads like this:
+
+```
+🎬 [PROJECT NAME] — Behind the Scenes
+
+I made an [AI-generated luxury fashion reel / atmospheric product shoot / etc].
+Total cost: $X. Total time: Y hours.
+Here's how.
+
+[FINAL REEL EMBED]
+
+═══════════════════════════════════════
+📋 STAGE 1 — IDEATION
+═══════════════════════════════════════
+
+The concept:
+> [One paragraph describing the impossibility you wanted to make]
+
+The hook:
+> [What stops viewers' scroll in the first 0.5 seconds]
+
+Sheets I needed:
+- F-Sheet (character)
+- E-Sheet (environment)
+- M-Sheet (material)
+
+Storyboard: [5-6 beat breakdown]
+
+═══════════════════════════════════════
+📐 STAGE 2 — STILL GENERATION
+═══════════════════════════════════════
+
+Tool: Higgsfield Nano Banana Pro
+Cost: ~$3
+Iterations: [actual count]
+
+For each beat, I generated a still using F-Sheet + E-Sheet + M-Sheet as references.
+
+[GALLERY OF FINAL STILLS — B1, B2, B3, B4, B5, B6]
+
+Key decision: [biggest call you made during this stage]
+
+═══════════════════════════════════════
+🎥 STAGE 3 — VIDEO GENERATION
+═══════════════════════════════════════
+
+Tool: Kling 3.0 image-to-video
+Cost: ~$3
+Slow-mo throughout. Path B (recorded VO over silent video).
+
+For each still, I generated a 5-second clip with a specific camera move:
+- B1: slow arc 90° + slow blink
+- B2: side-tracking dolly
+- B3: slow push-in + slow blink
+- B4: locked static (no motion)
+- B5: subtle upward drift
+- B6: continuous pull-back
+
+[GALLERY OF VIDEO CLIPS — B1-B6]
+
+Hardest beat: [which one took the most iterations and why]
+
+═══════════════════════════════════════
+🎙️ STAGE 4 — SOUND GENERATION
+═══════════════════════════════════════
+
+Tool: ElevenLabs v3 (cloned voice)
+Cost: ~$0
+
+VO script: [N words across N lines]
+
+> [VO script in blockquote]
+
+Music: [genre, source]
+SFX per beat: [brief list]
+
+[AUDIO EMBED — VO file]
+
+═══════════════════════════════════════
+✂️ STAGE 5 — EDITING
+═══════════════════════════════════════
+
+Tool: CapCut (free)
+Time: ~1-2 hours
+
+Steps:
+1. Drop all 6 clips on timeline in order
+2. Composite [any layer comp like screen-track if applicable]
+3. Place VO at sec X (each line)
+4. Add music bed + SFX
+5. Add wordmark text overlay at end
+6. Color grade pass
+7. Export 9:16 1080p
+
+═══════════════════════════════════════
+🚀 RESULTS
+═══════════════════════════════════════
+
+[FINAL REEL EMBED again, or thumbnail link]
+
+Distribution:
+- IG Reel: [date] — [views/likes/comments]
+- TikTok: [date] — [views/likes/comments]
+- X: [date] — [views/likes/comments]
+
+CTA conversions: [comment trigger word → DM → community signups]
+
+What I learned: [1-3 lessons that fed back into Track C curriculum]
+```
 
 ---
 
-## Build sequence
-
-Follow these steps in order. Each step has the exact Notion blocks to add.
+## Build steps in Notion
 
 ### Step 1 — Create the page
 
 1. In Notion, click "Add a page" in your sidebar
-2. Title: `[PROJECT NAME] — Production Tracker` (e.g., "Cloud Fashion Week — Production Tracker")
-3. **Cover image:** Click "Add cover" → Upload → use your reel's cover thumbnail
-4. **Icon:** Click "Add icon" → Choose emoji 🎬 (or 📽️ / 🎞️ / your project-specific emoji)
-5. Add a brief description directly under the title:
-   > A 15-second slow-motion IG Reel exploring [your impossibility]. Built in [N] days using AI Production Club Track C workflow.
+2. Title: `[PROJECT NAME] — Behind the Scenes` (e.g., "Cloud Fashion Week — Behind the Scenes")
+3. **Cover image:** Upload your reel's thumbnail
+4. **Icon:** 🎬 or specific project emoji
 
-### Step 2 — Add the project hero block
+### Step 2 — Hero block
 
-Below your description, add a callout block (`/callout`):
+Below the title, add a callout block (`/callout`):
 
 ```
-🎬 Status: [In Progress / Shipped / On Hold]
-📅 Date locked: [YYYY-MM-DD]
-🎯 Format: IG Reel · [N] sec · vertical 9:16
-🏷️ Wedge category: [Physics / material / scale / time impossibility]
-💰 Production cost: [total spent]
-⏰ Production time: [hours/days]
+I made a [project type] shoot.
+Total cost: $[X]. Total time: [Y].
+Here's how.
 ```
 
-Right below, embed your final reel:
-- `/video` → Upload your `reel-final.mp4`
-OR
-- `/embed` → Paste your YouTube/Vimeo URL
+Then add a video embed (`/video`) — upload your `reel-final.mp4` or paste YouTube/Vimeo URL.
 
-### Step 3 — Add Block 1: Concept + Brief
+### Step 3 — Five stage sections
 
-Add a heading 1 (`/h1`): **📋 Block 1 — Concept + Brief**
+For each of the 5 stages, add:
+1. A **heading 1** (`/h1`) with the stage emoji + name
+2. A **divider** (`/divider`) above the heading for visual separation
+3. The content (text blocks, callouts, image galleries, embeds)
 
-Add a quote block (`/quote`):
-- Paste your one-paragraph concept description
+The exact content for each stage is in the template structure above. Just copy and fill.
 
-### Step 4 — Add Block 2: Distribution Plan
+### Step 4 — Stage-specific blocks
 
-Add a heading 1: **📢 Block 2 — Distribution Plan**
+**Stage 1 (Ideation):**
+- Text: concept paragraph
+- Callout: the hook
+- Bullet list: sheets needed
+- Table: storyboard beats
 
-Add a table (`/table`) with 2 columns:
+**Stage 2 (Still Generation):**
+- Image gallery (`/gallery`): all your final stills
+- Toggle: "Iterations + lessons" with what failed and why
 
-| Field | Value |
-|---|---|
-| Hook (first 2 sec) | [Your visual hook description] |
-| Caption | [Your IG/TikTok caption] |
-| Hashtags | [Comma-separated tags] |
-| CTA | [Comment trigger or other call-to-action] |
-| DM funnel keyword | [Trigger word] |
-| Posting time | [Day + time] |
-| Platforms | [IG Reel / TikTok / X / etc.] |
+**Stage 3 (Video Generation):**
+- Video gallery (use a database with file uploads, view as gallery): all 6 video clips
+- Table: beat → camera move → outcome
 
-### Step 5 — Build the Sheets Tracker database (most important step)
+**Stage 4 (Sound Generation):**
+- Quote block: VO script
+- Audio file embed
+- Bullet list: music + SFX
 
-Add a heading 1: **📐 Block 3 — Sheets Tracker**
+**Stage 5 (Editing):**
+- Numbered list: edit steps
+- Optional: timeline screenshot from CapCut
 
-Add an inline database (`/database` → "Database — Inline"):
-- Name it: **Sheets**
+**Results:**
+- Final reel embed
+- Table: platform × date × engagement
+- Bullet list: lessons learned
 
-**Configure properties:**
-1. **Name** (default — already there) → rename to "Sheet Name"
-2. Add property: **Type** (Select)
-   - Options: Character (F-Sheet), Environment (E-Sheet), Material (M-Sheet), Identity (custom)
-3. Add property: **Status** (Status)
-   - Options: TODO, Generating, Approved, Failed/Regen
-4. Add property: **Preview** (Files & media)
-   - This is where you embed the sheet image
-5. Add property: **Used in beats** (Multi-select)
-   - Options: B1, B2, B3, B4, B5, B6
-6. Add property: **Prompt** (Text) — paste-ready prompt for this sheet
-7. Add property: **Reference image** (URL) — where the anchor reference came from
+### Step 5 — Share as duplicate-able template
 
-**Set the default view to "Gallery"** so each sheet shows as a card with its preview image.
+1. Click "Share" (top-right)
+2. "Share to web" → ON
+3. "Allow duplicate as template" → ON
+4. Copy the public link
+5. Drop the link in your IG/TikTok bio, X profile, Skool community
 
-**Add your sheets as cards:**
+This becomes YOUR shareable case study for this specific reel.
 
-For Cloud Fashion Week, create 3 cards:
-| Sheet Name | Type | Status | Used in beats |
-|---|---|---|---|
-| F-Sheet (Model) | Character | Approved | B1, B2, B3, B4, B6 |
-| E-Sheet (Studio Venue) | Environment | Approved | B1, B2, B3, B6 |
-| M-Sheet (Cloud) | Material | Approved | B1, B2, B3, B5, B6 |
+---
 
-For Polar Luxury, create your sheets similarly.
+## Why this template scales
 
-### Step 6 — Build the Beat Tracker database (the heart of the dashboard)
+**For YOU:**
+- Build it once, fill it in for every new reel
+- Each filled-in version = one case study unit for your Skool community
+- The 5-stage structure means students immediately recognize the pattern
 
-Add a heading 1: **🎥 Block 4 — Beat Tracker**
+**For your AUDIENCE (Skool prospects):**
+- They see the SAME structure across all your reels
+- They understand the pipeline is teachable
+- They convert because they see "I could do this if I had the curriculum"
 
-Add another inline database (`/database` → "Database — Inline"):
-- Name it: **Beats**
-
-**Configure properties:**
-1. **Name** → rename to "Beat ID" (e.g., B1, B2, B3...)
-2. **Beat title** (Text) — e.g., "Opening hook", "Eye macro", "Pull-back reveal"
-3. **Time** (Text) — e.g., "0-3s", "3-6s"
-4. **Status** (Status) — TODO, Generating, Approved, Reshoot
-5. **Still preview** (Files & media) — embed the locked still
-6. **Video preview** (Files & media OR URL) — embed the locked video clip
-7. **Camera move** (Select) — Arc, Side-track, Push-in, Static, Drift, Pull-back
-8. **Subject motion** (Text) — what the subject does
-9. **VO line** (Text) — what's spoken during this beat
-10. **References attached** (Multi-select) — F-Sheet, E-Sheet, M-Sheet
-11. **Hyperrealism req** (Checkbox) — for macro shots
-
-**Set default view to "Table"** for quick scanning. Add a second view as "Gallery" using "Still preview" as the cover.
-
-**Add your beats as rows:**
-
-For Cloud Fashion Week (5-clip version):
-| Beat ID | Beat title | Time | Camera move | Subject motion | VO line |
-|---|---|---|---|---|---|
-| B1 | Opening hook | 0-3s | Slow arc 90° | Still + slow blink | "There's no model." |
-| B3 | Push-in hero | 3-6s | Push-in | Slight gaze + blink | "There's no dress." |
-| B2 | Side-tracking | 6-9s | Side-track dolly | Still profile | "There's no studio." |
-| B4 | Eye macro | 9-12s | Static | Totally still | "There's no shoot." |
-| B6-fashion | Pull-back wide | 12-15s | Pull-back | Still | "AI Production Club. Studio quality without the studio." |
-
-### Step 7 — Add Block 5: Decision Log
-
-Add a heading 1: **📝 Block 5 — Decision Log**
-
-Add a simple table (or inline database) tracking key decisions:
-
-| Date | Decision | Reason | Outcome |
-|---|---|---|---|
-| YYYY-MM-DD | [What you chose] | [Why] | [Did it work?] |
-
-This is gold for the case study — shows your thinking process.
-
-**Example entries from Cloud Fashion Week:**
-- 2026-06-03: Pivoted from smoke to cloud — smoke too tendril-y, hard to lock coherence
-- 2026-06-04: Dropped B2 walking after 5 failed attempts — Kling applies fabric physics to body-mounted volumes
-- 2026-06-05: Final VO line "studio quality without the studio" — original "no studio could shoot" failed defensibility check
-
-### Step 8 — Add Block 6: Iteration History (use toggles)
-
-Add a heading 1: **🔁 Block 6 — Iteration History**
-
-For each beat, add a toggle (`/toggle`):
-- Toggle title: **B[N] iterations**
-- Inside the toggle: list each iteration as bullets
-  - v1: [what was tried, what failed]
-  - v2: [what was tried, what failed]
-  - v3: [what was tried, what landed]
-
-**Why toggles:** Iteration history can get long. Toggles keep the main page clean but accessible.
-
-### Step 9 — Add Block 7: Lessons Learned
-
-Add a heading 1: **💡 Block 7 — Lessons Learned**
-
-Add a simple table:
-
-| # | Doctrine | When it bit us | The fix |
-|---|---|---|---|
-| 1 | [Doctrine name] | [What went wrong] | [How we solved it] |
-
-For each lesson, link to the relevant DOCTRINE in your DOCTRINES.md (use `/link` to add an external link).
-
-### Step 10 — Add Block 8: QC Checklist
-
-Add a heading 1: **✅ Block 8 — QC Checklist (pre-publish gate)**
-
-Add a to-do list (`/todo`):
-- [ ] Subject identity locked across all beats
-- [ ] Impossibility visible in first 0.5 sec
-- [ ] Camera-move variety (no consecutive same-move)
-- [ ] Slow-mo register consistent
-- [ ] Color grade unified across beats
-- [ ] No audience / crew in venue beats
-- [ ] VO line defensible under scrutiny
-- [ ] Brand wordmark legible
-- [ ] Runtime matches target
-- [ ] Captions burned in
-- [ ] No real brand logos
-- [ ] Final pull-back / landing pays off the buildup
-
-### Step 11 — Add Block 9: Distribution + Post-Ship
-
-Add a heading 1: **🚀 Block 9 — Distribution + Post-Ship**
-
-Add a table:
-
-| Platform | Posted | Views | Likes | Comments | CTAs converted |
-|---|---|---|---|---|---|
-| IG Reel | YYYY-MM-DD | | | | |
-| TikTok | YYYY-MM-DD | | | | |
-| X / Twitter | YYYY-MM-DD | | | | |
-
-Update this weekly post-ship. The data feeds back into Block 5 (Decision Log) for future builds.
-
-### Step 12 — Set up sharing
-
-Once your page is built:
-
-1. Click "Share" (top-right of Notion page)
-2. Click "Share to web"
-3. Toggle ON: "Allow editing" → OFF (read-only)
-4. Toggle ON: "Allow duplicate as template" — **CRITICAL** so people can copy your structure
-5. Copy the public link
-
-This is your shareable case study + template.
-
-**Marketing use:** drop the public Notion link in your IG/TikTok bio, X profile, or Skool community as "the full behind-the-scenes."
+**For your CURRENT students:**
+- Every new case study reinforces the 5 stages
+- They can match their own builds against your structure
+- Lessons-learned section feeds back into curriculum updates
 
 ---
 
 ## Worked example references
 
+When you build your first Notion case study, reference these for filling in specifics:
+
 ### Cloud Fashion Week
-- [Public repo](https://github.com/owaolookadat/apc-lesson-assets/tree/main/projects/cloud-fashion-week)
-- [Markdown Project Sheet](../PROJECT-SHEET.md)
-- [Recipe kit](.)
+- [Final reel](../reel-final.mp4)
+- [Project Sheet](../PROJECT-SHEET.md) — has all the specifics for each stage
+- [Beat stills](../stills/)
+- [Video clips](../clips/)
+- [VO](../vo/vo-full.mp3)
 
 ### Polar Luxury
-- [Public repo](https://github.com/owaolookadat/apc-lesson-assets/tree/main/projects/polar-luxury)
 - [Project Sheet](../../polar-luxury/PROJECT-SHEET.md)
-
-You can build a Notion tracker for either of these following the steps above. Use the existing markdown Project Sheet content to fill in the Notion blocks.
-
----
-
-## Notion property formula cheat sheet
-
-A few advanced formulas that make the tracker more useful:
-
-### Progress percentage formula
-
-On the Beat Tracker database, add a property:
-- **Type:** Formula
-- **Formula:**
-  ```
-  if(prop("Status") == "Approved", "✅", if(prop("Status") == "Generating", "🟡", if(prop("Status") == "Reshoot", "🔴", "⚪")))
-  ```
-This gives you a visual status indicator in every row.
-
-### Overall project progress
-
-On the main page, add a callout that shows count of beats by status:
-- Use a linked view of the Beats database
-- Group by "Status"
-- Show count per group
-
-You'll see at a glance: "3 Approved / 1 Generating / 2 TODO"
+- [Final reel](../../polar-luxury/POLAR%20FINAL.mp4)
+- Same 5-stage structure applies — just plug in polar bear / scarf / cuff / sunglasses content
 
 ---
 
-## Tips for using the tracker
+## Content marketing usage
 
-1. **Update LIVE during the build** — don't fill it in at the end. The decision log especially needs real-time entries.
-2. **Embed media inline** — drag the actual still/clip into the database row. Don't just link.
-3. **Use the gallery view** for browsing — table view for editing.
-4. **Duplicate this tracker per project** — once your structure is locked, "Duplicate" gives you a blank starting point for the next reel.
-5. **Share the read-only public link** as your case-study marketing — viewers can duplicate it to build their own.
+Once you have 2-3 of these Notion case studies public, your content strategy becomes:
 
----
+**Public drop (free):** the reel itself on IG/TikTok
+**Hook in caption:** "Behind the scenes process is here →" with link to your Notion case study
+**At the bottom of every Notion case study:** "Want to learn this workflow? Join [AI Production Club](https://skool.com/aiproductionclub) for $9/month"
 
-## Why this matters for your $9/month Skool play
-
-A polished Notion tracker is:
-- **Proof of work** — anyone can see the full build process
-- **Replicable** — they can duplicate the template for their own reels
-- **Marketing asset** — shareable as a portfolio piece
-- **Conversion driver** — "want the full curriculum behind this? Join Skool $9/mo"
-
-Each project's Notion tracker = one case study. You're building a library of public case studies over time. That library IS the marketing.
+The Notion case studies become your **discovery → conversion funnel**:
+1. Reel hooks them (IG/TikTok algorithm)
+2. Notion case study proves the workflow is real (free transparency)
+3. Skool community delivers the curriculum + community + ongoing case studies (paid)
 
 ---
 
-— Cloud Fashion Week Recipe Kit · Notion Project Tracker Build Guide · AI Production Club Track C
+## Tips
+
+1. **Update LIVE during the build** — fill in stage 1 when ideating, stage 2 when generating stills, etc. By the time you ship, the case study is also done.
+
+2. **Embed actual files** — drag stills and clips directly into the Notion blocks. Don't just link.
+
+3. **Keep stage 5 (editing) brief** — that's the same for every reel. No need to over-document.
+
+4. **Iterations belong in toggles** — main page should be clean. Toggle drop-downs hide the messy iteration history but anyone curious can dig.
+
+5. **The "What I learned" section feeds the curriculum** — every case study should surface 1-3 doctrines that update Track C.
+
+---
+
+## Why this is BETTER than a complex tracker
+
+The earlier version of this guide suggested elaborate databases with multiple views, kanban boards, formula properties, etc. That's over-engineered.
+
+The 5-stage pattern is simpler and more powerful:
+- Every reel maps to the same 5 stages
+- Students recognize the pattern instantly
+- You can build the template in 20 minutes
+- Filling it in for a new reel takes 30 minutes (during the build)
+
+Power users can add complexity later if they want. But the simple version is what converts.
+
+---
+
+— Cloud Fashion Week Recipe Kit · Notion Case Study Template · AI Production Club Track C
