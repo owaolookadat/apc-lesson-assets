@@ -298,7 +298,6 @@ B1's 90° arc is the highest-risk camera move for AI generation — maintaining 
 
 - **This Project Sheet:** `apc-lesson-assets/projects/cloud-fashion-week/PROJECT-SHEET.md`
 - **Sheets (locked):** `apc-lesson-assets/projects/cloud-fashion-week/sheets/` — `f-sheet-model.png`, `e-sheet-venue.png`, `e-sheet-venue-multi-angle.png`, `m-sheet-cloud.png`
-- **Anchor reference:** `apc-lesson-assets/projects/cloud-fashion-week/stills/anchor-model.png` (JJ's original anchor pick from manual Higgsfield iteration)
 - **Beat stills (pending):** `apc-lesson-assets/projects/cloud-fashion-week/stills/`
 - **Clips (pending):** `apc-lesson-assets/projects/cloud-fashion-week/clips/`
 - **Final reel (pending):** `apc-lesson-assets/projects/cloud-fashion-week/reel-final.mp4`
